@@ -14,10 +14,10 @@ Some useful userscripts :smirk:
 
 2. Install: <br>
 
-| Userscript              | Install            |
-|-------------------------|:------------------:|
-| Dark Odoo               | [install][doo-raw] |
-| Odoo Admin Auto Connect | [install][aac-raw] |  
+| Userscript              | Install            | Version                                                                            |
+|-------------------------|:------------------:|:----------------------------------------------------------------------------------:|
+| Dark Odoo               | [install][doo-raw] | ![alt text](https://img.shields.io/badge/Version-Beta-C4246A.svg "Version Beta") |
+| Odoo Admin Auto Connect | [install][aac-raw] | ![alt text](https://img.shields.io/badge/Version-Beta-C4246A.svg "Version Beta") |
 
 [doo-raw]: https://github.com/Maurin3/userscripts/raw/master/dark-odoo.user.js
 [aac-raw]: https://github.com/Maurin3/userscripts/raw/master/odoo-admin-auto-connect.user.js
