@@ -19,8 +19,8 @@ Userscripts useful when developing for Odoo
 | Dark Odoo               | [install][doo-raw] |
 | Odoo Admin Auto Connect | [install][aac-raw] |  
 
-[doo-raw]: https://raw.githubusercontent.com/Maurin3/userscripts/master/dark-odoo.user.js
-[aac-raw]: https://raw.githubusercontent.com/Maurin3/userscripts/master/odoo-admin-auto-connect.user.js
+[doo-raw]: https://github.com/Maurin3/userscripts/raw/master/dark-odoo.user.js
+[aac-raw]: https://github.com/Maurin3/userscripts/raw/master/odoo-admin-auto-connect.user.js
 
 ## Updates
 
