@@ -13,13 +13,14 @@ Userscripts useful when developing for Odoo
 	* UC Browser - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=ucweb).
 
 2. Install: <br>
-	| Userscript                                   | Install             |
-	|----------------------------------------------|:-------------------:|
-	| Dark Odoo                                    | [install][doo-raw]  |
-    | Odoo Admin Auto Connect                      | [install][aac-raw]  |
+
+| Userscript              | Install            |
+|-------------------------|:------------------:|
+| Dark Odoo               | [install][doo-raw] |
+| Odoo Admin Auto Connect | [install][aac-raw] |  
 
 [doo-raw]: https://raw.githubusercontent.com/Maurin3/userscripts/master/dark-odoo.user.js
-[tws-raw]: https://raw.githubusercontent.com/Maurin3/userscripts/master/odoo-admin-auto-connect.user.js
+[aac-raw]: https://raw.githubusercontent.com/Maurin3/userscripts/master/odoo-admin-auto-connect.user.js
 
 ## Updates
 
