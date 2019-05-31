@@ -5,22 +5,25 @@
 // @version      0.1.0
 // @description  Make all odoo.com domains dark (local version too)
 // @author       Maurin3
-// @include      https://www.*.odoo.com/*
-// @include      https://www.*.dev.odoo.com/*
-// @include      https://*.odoo.com/*
-// @include      https://*.runbot*.odoo.com/*
-// @include      https://www.odoo.com/*
-// @include      http://localhost:8069/*
+// @match        https://www.*.odoo.com/*
+// @match        https://www.*.dev.odoo.com/*
+// @match        https://*.odoo.com/*
+// @include      /^http://[0-9]{6}\-[a-z0-9]{2}\-0\-[a-z0-9]{6}\.runbot[0-9]{2}\.odoo\.com/(.*)$/
+// @match        https://www.odoo.com/*
+// @match        http://localhost:8069/*
 // @run-at       document-start
 // @grant        none
 // @downloadURL  https://raw.githubusercontent.com/Maurin3/userscripts/master/dark-odoo.user.js
 // @updateURL    https://raw.githubusercontent.com/Maurin3/userscripts/master/dark-odoo.user.js
 // ==/UserScript==
 
-//Does not work on runbots
-
-(function() {var css = "";
-if (false || (document.domain == "odoo.com" || document.domain.substring(document.domain.indexOf(".odoo.com") + 1) == "odoo.com") ||(new RegExp("((http|https)://)?(www[.])?odoo.com/.+")).test(document.location.href) || (new RegExp("((http|https)://)?localhost:8069/.+")).test(document.location.href))
+(function() {
+    
+var css = "";
+if (false || (document.domain == "odoo.com" || document.domain.substring(document.domain.indexOf(".odoo.com") + 1) == "odoo.com")
+          || (new RegExp("((http|https)://)?(www[.])?odoo.com/.+")).test(document.location.href) 
+          || (new RegExp("((http|https)://)?localhost:8069/.+")).test(document.location.href)
+          || (new RegExp("/^http://[0-9]{6}\-[a-z0-9]{2}\-0\-[a-z0-9]{6}\.runbot[0-9]{2}\.odoo\.com/(.*)$/")).test(document.location.href))
     css += [
         "body{",
         "    background-color: #1a1a1a;",
