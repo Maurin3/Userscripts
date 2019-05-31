@@ -12,7 +12,7 @@ Userscripts useful when developing for Odoo
 	* Dolphin - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=dolphin).
 	* UC Browser - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=ucweb).
 
-2. Install:
+2. Install: <br>
 	| Userscript                                   | Install             |
 	|----------------------------------------------|:-------------------:|
 	| Dark Odoo                                    | [install][doo-raw]  |
