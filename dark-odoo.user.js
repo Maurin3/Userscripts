@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Dark theme for Odoo
-// @icon         http://github.com/Maurin3/userscripts/master/images/doo.png
+// @icon         http://github.com/Maurin3/userscripts/blob/master/images/doo.png?raw=true
 // @namespace    https://github.com/Maurin3
 // @version      0.1.0
 // @description  Make all odoo.com domains dark (local version too)
