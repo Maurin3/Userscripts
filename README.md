@@ -1,5 +1,5 @@
 # Userscripts
-Userscripts useful when developing for Odoo
+Some useful userscripts :smirk:
 
 ## Installation
 
