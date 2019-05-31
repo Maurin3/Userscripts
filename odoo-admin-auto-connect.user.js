@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Odoo Admin Auto Connect
-// @icon         http://raw.githubusercontent.com/Maurin3/userscripts/master/images/aac.png
-// @namespace    http://tampermonkey.net/
+// @icon         http://github.com/Maurin3/userscripts/master/images/aac.png
+// @namespace    https://github.com/Maurin3
 // @version      0.1.0
 // @description  Auto connect as admin in runbots of odoo.com (and local instance)
 // @author       Maurin3
