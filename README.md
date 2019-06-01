@@ -4,18 +4,15 @@ Some useful userscripts :smirk:
 ## Installation
 
 1. To install the userscripts, you have to install one of these extension on your browser:
+   * [Tampermonkey](https://www.tampermonkey.net/) (Personally, I use this one)
+   * [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) (Firefox only)
+   * [Violent Monkey](https://addons.opera.com/en/extensions/details/violent-monkey/) (Opera only)
 
-    * Firefox - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=firefox) or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) (GM v4+ is **not supported**!).
-	* Chrome - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=chrome).
-	* Opera - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=opera) or [Violent Monkey](https://addons.opera.com/en/extensions/details/violent-monkey/).
-	* Safari - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=safari).
-	* Dolphin - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=dolphin).
-	* UC Browser - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=ucweb).
 
-2. Install: <br>
+2. Install:
 
-| Userscript              | Install            | Version                                                                            |
-|-------------------------|:------------------:|:----------------------------------------------------------------------------------:|
+| Userscript              | Install            | Version                                                                                |
+|-------------------------|:------------------:|:-------------------------------------------------------------------------------------:|
 | Dark Odoo               | [install][doo-raw] | ![alt text](https://img.shields.io/badge/Version-Beta-C4246A.svg "Version Beta") |
 | Odoo Admin Auto Connect | [install][aac-raw] | ![alt text](https://img.shields.io/badge/Version-Beta-C4246A.svg "Version Beta") |
 
@@ -24,7 +21,7 @@ Some useful userscripts :smirk:
 
 ## Updates
 
-These userscripts are automatically updated within Tampermonkey or Greasemonkey. You can click on "check updates" or click on the install link again to update the userscript.
+These userscripts are automatically updated within Tampermonkey (or Greasemonkey, Violent Monkey). You can click on "check updates" or click on the install link again to update the userscript.
 
 ## Other useful userscipts
 
