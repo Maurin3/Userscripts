@@ -6,7 +6,7 @@
 // @description  Auto connect as admin in runbots of odoo.com (and local instance)
 // @author       Maurin3
 // @match        https://*.runbot*.odoo.com/web/login
-// @include      /^http://[0-9]{6}\-[a-z0-9]{2}\-0\-[a-z0-9]{6}\.runbot[0-9]{2}\.odoo\.com/web/login$/
+// @include      /^http://[0-9]{6}\-(saas\-)?[0-9]{2}\-[0-9]+\-[a-z0-9]{6}\.runbot[0-9]{2}\.odoo\.com/web/login$/
 // @match        http://localhost:8069/web/login
 // @downloadURL  https://raw.githubusercontent.com/Maurin3/userscripts/master/odoo-admin-auto-connect.user.js
 // @updateURL    https://raw.githubusercontent.com/Maurin3/userscripts/master/odoo-admin-auto-connect.user.js
