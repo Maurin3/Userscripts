@@ -2,7 +2,7 @@
 // @name         Odoo Admin Auto Connect
 // @icon         http://github.com/Maurin3/userscripts/blob/master/images/aac.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      0.1.0
+// @version      0.1.1
 // @description  Auto connect as admin in runbots of odoo.com (and local instance)
 // @author       Maurin3
 // @match        https://*.runbot*.odoo.com/web/login
@@ -17,6 +17,8 @@
 (function() {
     'use strict';
 
+    let errors = document.getElementsByClassName('alert-danger');
+
     //I admitted that admin login/password is admin/admin
     let login = document.getElementById("login");
     let password = document.getElementById("password");
@@ -27,5 +29,8 @@
     //I admitted there is only one form on this page
     let form = document.forms[0];
 
-    form.submit();
+    //In case of wrong login/password : not submitting form
+    if (errors.length == 0){
+        form.submit();
+    }
 })();
