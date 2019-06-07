@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Dark theme for Odoo
-// @icon         http://github.com/Maurin3/userscripts/blob/master/images/doo.png?raw=true
+// @icon         http://github.com/Maurin3/Userscripts/blob/master/images/doo.png?raw=true
 // @namespace    https://github.com/Maurin3
 // @version      0.1.0
 // @description  Make all odoo.com domains dark (local version too)
@@ -13,8 +13,8 @@
 // @match        http://localhost:8069/*
 // @run-at       document-start
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/Maurin3/userscripts/master/dark-odoo.user.js
-// @updateURL    https://raw.githubusercontent.com/Maurin3/userscripts/master/dark-odoo.user.js
+// @downloadURL  https://raw.githubusercontent.com/Maurin3/Userscripts/master/dark-odoo.user.js
+// @updateURL    https://raw.githubusercontent.com/Maurin3/Userscripts/master/dark-odoo.user.js
 // ==/UserScript==
 
 (function() {
