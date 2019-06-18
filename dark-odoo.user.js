@@ -22,7 +22,7 @@ var css = "";
 if (false || (document.domain == "odoo.com/web" || document.domain.substring(document.domain.indexOf(".odoo.com/web") + 1) == "odoo.com/web")
             || (new RegExp("((http|https)://)?(www[.])?odoo.com/web.+")).test(document.location.href)
             || (new RegExp("((http|https)://)?localhost:8069/web.+")).test(document.location.href)
-            || (new RegExp("/^http://[0-9]{6}\-[a-z0-9]{2}\-0\-[a-z0-9]{6}\.runbot[0-9]{2}\.odoo\.com/wrb(.*)$/")).test(document.location.href))
+            || (new RegExp("/^http://[0-9]{6}\-[a-z0-9]{2}\-0\-[a-z0-9]{6}\.runbot[0-9]{2}\.odoo\.com/web(.*)$/")).test(document.location.href))
     css += [
         "body{",
         "    background-color: #222222;",
