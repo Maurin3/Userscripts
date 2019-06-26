@@ -337,6 +337,7 @@
             ".note-editor .note-toolbar,",
             ".note-editor .note-toolbar .dropdown-menu {",
             "    background-color: #222222;",
+            "    color: #bfbfbf;",
             "}",
             ".note-editor .note-toolbar > .btn-group .btn-group.show .dropdown-toggle{",
             "    background-color: rgba(255, 255, 255, 0.05) !important;",
