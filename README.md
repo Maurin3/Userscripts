@@ -1,13 +1,13 @@
 # Userscripts
+
 Some useful userscripts :smirk:
 
 ## Installation
 
-1. To install the userscripts, you have to install one of these extension on your browser:
+1. To install the userscripts, you have to install one of these extensions on your browser:
    * [Tampermonkey](https://www.tampermonkey.net/) (Personally, I use this one)
    * [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) (Firefox only)
    * [Violent Monkey](https://addons.opera.com/en/extensions/details/violent-monkey/) (Opera only)
-
 
 2. Install:
 
@@ -25,7 +25,7 @@ Some useful userscripts :smirk:
 
 These userscripts are automatically updated within Tampermonkey (or Greasemonkey, Violent Monkey). You can click on "check updates" or click on the install link again to update the userscript.
 
-## Other useful userscipts
+## Other useful userscripts
 
 * [Mottie's GitHub userscipts](https://github.com/Mottie/GitHub-userscripts)
 * [Jerone's userscripts](https://github.com/jerone/UserScripts)
