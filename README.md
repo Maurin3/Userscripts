@@ -30,3 +30,5 @@ These userscripts are automatically updated within Tampermonkey (or Greasemonkey
 * [Mottie's GitHub userscipts](https://github.com/Mottie/GitHub-userscripts)
 * [Jerone's userscripts](https://github.com/jerone/UserScripts)
 * [List of userscripts done by brunocvcunha](https://github.com/brunocvcunha/awesome-userscripts)
+* [GitHub Dark by StylishThemes](https://github.com/StylishThemes/GitHub-Dark)
+* [Stack Exchange/Overflow Moderation Tools and Dark Theme by samliew](https://github.com/samliew/SO-mod-userscripts)
