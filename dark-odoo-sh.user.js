@@ -2,7 +2,7 @@
 // @name         Dark theme for odoo.sh
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/dsh.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      0.1.0
+// @version      0.1.1
 // @description  Make odoo.sh dark
 // @author       Maurin3
 // @match        https://www.odoo.sh/*
@@ -23,8 +23,14 @@ if (false || (document.domain == "odoo.sh" || document.domain.substring(document
         "    background-color: #1a1a1a;",
         "    color: #FFFFFF;",
         "}",
+        "#wrapwrap{",
+        "    background-color: #222222;",
+        "}",
         "h1, h2, h3, h4, h5{",
         "    color: #FFFFFF;",
+        "}",
+        "a:hover{",
+        "    color: #00b3b0;",
         "}",
         ".o_sh_projects_cards > .o_project_cards > .o_project_create_new > a > .o_project_card{",
         "    background-color: #1a1a1a;",
@@ -93,6 +99,16 @@ if (false || (document.domain == "odoo.sh" || document.domain.substring(document
         "}",
         ".o_builds_view .o_builds_card {",
         "    border-right: 1px solid #222222;",
+        "}",
+        ".well {",
+        "    background-color: rgba(0,0,0,0.5);",
+        "}",
+        ".panel, .panel .thumbnail, .panel .form-control {",
+        "    background-color: #222222;",
+        "    color: #bfbfbf;",
+        "}",
+        ".o_location .panel label.control-label {",
+        "    color: #bfbfbf;",
         "}",
     ].join("\n");
 if (typeof GM_addStyle != "undefined") {
