@@ -2,7 +2,7 @@
 // @name         Dark theme for odoo.sh
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/dsh.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      0.1.2
+// @version      0.1.3
 // @description  Make odoo.sh dark
 // @author       Maurin3
 // @match        https://www.odoo.sh/*
@@ -47,6 +47,9 @@
         "}",
         ".o_project_title, body .text-black{",
         "    color: #FFFFFF;",
+        "}",
+        ".o_sh_projects_search  {",
+        "    color: initial;",
         "}",
 
         // Home Page
@@ -187,6 +190,14 @@
         "}",
         ".o_sh_status .o_sh_global_data_container {",
         "    background-color: #222222;",
+        "}",
+        // Modals
+        ".modal-header,",
+        ".modal-title,",
+        ".modal-body,",
+        ".modal-footer {",
+        "    background-color: #222222 !important;",
+        "    color: #dfdfdf !important;",
         "}",
     ].join("\n");
 if (typeof GM_addStyle != "undefined") {
