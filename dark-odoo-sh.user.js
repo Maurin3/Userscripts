@@ -6,9 +6,8 @@
 // @description  Make odoo.sh dark
 // @author       Maurin3
 // @match        https://www.odoo.sh/*
-// @match        https://eupd1.odoo.com/*
-// @match        https://eupd2.odoo.com/*
-// @match        https://eupp4.odoo.com/*
+// @include      /^https://eupp[0-9]*.odoo\.com/paas/*
+// @include      /^https://eupd[0-9]*.odoo\.com/paas/*
 // @grant        none
 // @run-at       document-start
 // @downloadURL  https://raw.githubusercontent.com/Maurin3/Userscripts/master/dark-odoo-sh.user.js
