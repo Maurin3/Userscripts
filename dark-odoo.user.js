@@ -235,6 +235,10 @@
             ".o_mail_preview .o_mail_preview_image .o_user_idle.fa{",
             "    color: #F0AD4E;",
             "}",
+            ".o_thread_window .o_out_of_office {",
+            "    background-color: #0e1f25;",
+            "    color: #92b0b9;",
+            "}",
             // Control Panel
             ".o_control_panel{",
             "    background-color: #0d0d0d;",
