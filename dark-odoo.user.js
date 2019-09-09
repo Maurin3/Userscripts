@@ -497,6 +497,25 @@
             "    background-color: initial;",
             "    color: initial;",
             "}",
+            ".ace-tm .ace_meta.ace_tag {",
+            "    color: rgb(128, 147, 255) !important;",
+            "}",
+            ".ace-tm .ace_string {",
+            "    color: rgb(156, 252, 159) !important;",
+            "}",
+            ".ace-tm, .ace-tm .ace_keyword.ace_operator {",
+            "    background-color: #222222 !important;",
+            "    color: #dfdfdf !important;",
+            "}",
+            ".ace-tm .ace_storage, .ace-tm .ace_keyword {",
+            "    color: dodgerblue !important;",
+            "}",
+            ".ace-tm .ace_constant.ace_language {",
+            "    color: darkturquoise !important;",
+            "}",
+            ".ace-tm .ace_cursor {",
+            "    color: #dfdfdf !important;",
+            "}",
             // ".note-style.btn-group > div > ul"
             // ".note-fontsize.btn-group > div > div"
             // ".note-fore-color-preview.mx-1 > ul"
@@ -699,6 +718,15 @@
             ".o_in_studio header{",
             "    background-color: #262C34;",
             "}",
+
+            // 11.0
+
+            //
+            // ".btn-default {",
+            // "    background-color: rgba(255, 255, 255, 0.25);",
+            // "    color: #FFFFFF;",
+            // "    border-color: #222222;",
+            // "}",
         ].join("\n");
     if (typeof GM_addStyle != "undefined") {
         GM_addStyle(css);
