@@ -516,7 +516,12 @@
             ".ace-tm .ace_cursor {",
             "    color: #dfdfdf !important;",
             "}",
-            // ".note-style.btn-group > div > ul"
+            ".note-style.btn-group > div > ul,",
+            ".note-style.btn-group > div > ul > li,",
+            ".note-style.btn-group > div > ul > li > a {",
+            "    color: initial;",
+            "    background-color: initial;",
+            "}",
             // ".note-fontsize.btn-group > div > div"
             // ".note-fore-color-preview.mx-1 > ul"
             // Grid view
@@ -565,7 +570,7 @@
             "    opacity: 0.70;",
             "}",
             // Website Dashboard
-            "..o_dashboard_view,",
+            ".o_dashboard_view,",
             ".o_graph .o_graph_container .o_graph_svg_container svg {",
             "    background-color: #222222 !important;",
             "}",
