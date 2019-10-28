@@ -30,33 +30,83 @@
     passwordDiv[0].style.display = 'none';
     button[0].style.display = 'none';
 
-    function adminConnect(event){
-        console.log('hello');
+    let adminConnect = function(event){
         login.value = 'admin';
         password.value = 'admin';
         if (errors.length == 0){
-          form.submit();
-      }
+            form.submit();
+        }
+    }
+
+    let demoConnect = function(event){
+        login.value = 'demo';
+        password.value = 'demo';
+        if (errors.length == 0){
+            form.submit();
+        }
+    }
+
+    let otherConnect = function(event){
+        loginDiv[0].style.display = 'block';
+        passwordDiv[0].style.display = 'block';
+        button[0].style.display = 'block';
+        adminInput.classList.remove('d-inline');
+        adminInput.classList.add('d-none');
+        demoInput.classList.remove('d-inline');
+        demoInput.classList.add('d-none');
+        otherInput.classList.remove('d-inline');
+        otherInput.classList.add('d-none');
+        cancelOtherButton.style.display = 'block';
+    }
+
+    let cancelOther = function(event){
+        loginDiv[0].style.display = 'none';
+        passwordDiv[0].style.display = 'none';
+        button[0].style.display = 'none';
+        adminInput.classList.remove('d-none');
+        adminInput.classList.add('d-inline');
+        demoInput.classList.remove('d-none');
+        demoInput.classList.add('d-inline');
+        otherInput.classList.remove('d-none');
+        otherInput.classList.add('d-inline');
+        cancelOtherButton.style.display = 'none';
     }
 
     let impersonate = document.createElement('div');
-    impersonate.classList.add('form-group');
+    impersonate.classList.add('form-group', 'text-center');
 
     let adminInput = document.createElement('input');
-    adminInput.classList.add('form-control');
+    adminInput.classList.add('form-control', 'd-inline', 'btn', 'btn-outline-primary');
     adminInput.setAttribute('type', 'button');
-    adminInput.value = 'admin';
+    adminInput.style.width = 'calc(100% / 4)';
+    adminInput.value = 'Admin';
     impersonate.appendChild(adminInput);
-    adminInput.addEventListener('onclick', adminConnect, false);
+    adminInput.addEventListener('click', adminConnect, false);
+
+    let demoInput = document.createElement('input');
+    demoInput.classList.add('form-control', 'd-inline', 'mx-3', 'btn', 'btn-outline-secondary');
+    demoInput.style.width = 'calc(100% / 4)';
+    demoInput.setAttribute('type', 'button');
+    demoInput.value = 'Demo';
+    impersonate.appendChild(demoInput);
+    demoInput.addEventListener('click', demoConnect, false);
+
+    let otherInput = document.createElement('input');
+    otherInput.classList.add('form-control', 'd-inline', 'btn', 'btn-outline-dark');
+    otherInput.setAttribute('type', 'button');
+    otherInput.style.width = 'calc(100% / 4)';
+    otherInput.value = 'Other';
+    impersonate.appendChild(otherInput);
+    otherInput.addEventListener('click', otherConnect, false);
+
+    let cancelOtherButton = document.createElement('button');
+    cancelOtherButton.style.display = 'none';
+    cancelOtherButton.innerHTML = 'Cancel';
+    cancelOtherButton.classList.add('btn', 'btn-outline-secondary', 'w-100');
+    cancelOtherButton.setAttribute('type', 'button');
+    impersonate.appendChild(cancelOtherButton);
+    cancelOtherButton.addEventListener('click', cancelOther, false);
 
     let form = document.forms[0];
     form.insertBefore(impersonate, button[0]);
-
-    //I admitted there is only one form on this page
-    //let form = document.forms[0];
-
-    //In case of wrong login/password : not submitting form
-    //if (errors.length == 0){
-    //    form.submit();
-    //}
 })();
