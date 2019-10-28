@@ -2,7 +2,7 @@
 // @name         Dark theme for odoo.sh
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/dsh.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      0.1.3
+// @version      1.0
 // @description  Make odoo.sh dark
 // @author       Maurin3
 // @match        https://www.odoo.sh/*
