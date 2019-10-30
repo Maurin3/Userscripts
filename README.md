@@ -25,6 +25,7 @@ Some useful userscripts :smirk:
 [oqc-raw]: https://github.com/Maurin3/Userscripts/raw/master/odoo-quick-connect.user.js
 [dsh-raw]: https://github.com/Maurin3/Userscripts/raw/master/dark-odoo-sh.user.js
 [dgo-raw]: https://github.com/Maurin3/Userscripts/raw/master/google-dark.user.js
+[tfc-raw]: https://github.com/Maurin3/Userscripts/raw/master/no-ads-tab-for-a-cause.user.js
 
 [original-dgo]: https://userstyles.org/styles/144028/google-clean-dark
 [original-me]: https://github.com/Maurin3/Userscripts
