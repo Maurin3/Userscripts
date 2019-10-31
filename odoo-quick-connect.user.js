@@ -5,9 +5,9 @@
 // @version      1.0
 // @description  Select the impersonation in runbots of odoo.com (and local instance)
 // @author       Maurin3
-// @include      /^http://[0-9]{6}\-(saas\-)?[0-9]{2}\-[0-9]+\-[a-z0-9]{6}\.runbot[0-9]{2}\.odoo\.com/web/login$/
-// @match        http://localhost:8069/web/login
-// @match        http://localhost/web/login
+// @include      /^http://[0-9]{6}\-(saas\-)?[0-9]{2}\-[0-9]+\-[a-z0-9]{6}\.runbot[0-9]{2}\.odoo\.com/web/login*$/
+// @match        http://localhost:8069/web/login*
+// @match        http://localhost/web/login*
 // @downloadURL  https://raw.githubusercontent.com/Maurin3/Userscripts/master/odoo-quick-connect.user.js
 // @updateURL    https://raw.githubusercontent.com/Maurin3/Userscripts/master/odoo-quick-connect.user.js
 // @run-at       document-end
@@ -16,6 +16,41 @@
 
 (function() {
     'use strict';
+
+    // Functions
+    function classUndisplay(elements){
+        for (let element of elements){
+            element.classList.remove('d-inline');
+            element.classList.add('d-none');
+        }
+    }
+
+    function classDisplay(elements){
+        for (let element of elements){
+            element.classList.remove('d-none');
+            element.classList.add('d-inline');
+        }
+    }
+
+    function styleUndisplay(elements){
+        for (let element of elements){
+            element.style.display = 'none';
+        }
+    }
+
+    function styleDisplay(elements){
+        for (let element of elements){
+            element.style.display = 'block';
+        }
+    }
+
+    function connect(value){
+        login.value = value;
+        password.value = value;
+        if (errors.length == 0){
+            form.submit();
+        }
+    }
 
     let errors = document.getElementsByClassName('alert-danger');
 
@@ -26,50 +61,24 @@
     let passwordDiv = document.getElementsByClassName('field-password');
     let button = document.getElementsByClassName('oe_login_buttons');
 
-    loginDiv[0].style.display = 'none';
-    passwordDiv[0].style.display = 'none';
-    button[0].style.display = 'none';
+    styleUndisplay([loginDiv[0], passwordDiv[0], button[0]]);
 
     let adminConnect = function(event){
-        login.value = 'admin';
-        password.value = 'admin';
-        if (errors.length == 0){
-            form.submit();
-        }
+        connect('admin');
     }
 
     let demoConnect = function(event){
-        login.value = 'demo';
-        password.value = 'demo';
-        if (errors.length == 0){
-            form.submit();
-        }
+        connect('demo');
     }
 
     let otherConnect = function(event){
-        loginDiv[0].style.display = 'block';
-        passwordDiv[0].style.display = 'block';
-        button[0].style.display = 'block';
-        adminInput.classList.remove('d-inline');
-        adminInput.classList.add('d-none');
-        demoInput.classList.remove('d-inline');
-        demoInput.classList.add('d-none');
-        otherInput.classList.remove('d-inline');
-        otherInput.classList.add('d-none');
-        cancelOtherButton.style.display = 'block';
+        styleDisplay([loginDiv[0], passwordDiv[0], button[0], cancelOtherButton]);
+        classUndisplay([adminInput, demoInput, otherInput]);
     }
 
     let cancelOther = function(event){
-        loginDiv[0].style.display = 'none';
-        passwordDiv[0].style.display = 'none';
-        button[0].style.display = 'none';
-        adminInput.classList.remove('d-none');
-        adminInput.classList.add('d-inline');
-        demoInput.classList.remove('d-none');
-        demoInput.classList.add('d-inline');
-        otherInput.classList.remove('d-none');
-        otherInput.classList.add('d-inline');
-        cancelOtherButton.style.display = 'none';
+        styleUndisplay([loginDiv[0], passwordDiv[0], button[0], cancelOtherButton]);
+        classDisplay([adminInput, demoInput, otherInput]);
     }
 
     let impersonate = document.createElement('div');
@@ -106,6 +115,13 @@
     cancelOtherButton.setAttribute('type', 'button');
     impersonate.appendChild(cancelOtherButton);
     cancelOtherButton.addEventListener('click', cancelOther, false);
+
+    function createButton(elemType, name, parentElem, color){
+        let button = document.createElement(elemType);
+        button.setAttribute('type', 'button');
+        parentElem.appendChild(button);
+        cancelOtherButton.addEventListener('click', cancelOther, false);
+    }
 
     let form = document.forms[0];
     form.insertBefore(impersonate, button[0]);
