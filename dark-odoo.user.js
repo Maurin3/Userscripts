@@ -2,7 +2,7 @@
 // @name         Dark theme for Odoo
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/doo.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      0.1.4
+// @version      0.2.0
 // @description  Make all odoo.com domains dark (local version too)
 // @author       Maurin3
 // @match        https://www.*.odoo.com/web*
@@ -18,15 +18,30 @@
 // @updateURL    https://raw.githubusercontent.com/Maurin3/Userscripts/master/dark-odoo.user.js
 // ==/UserScript==
 
-(function() {
-    var css = "";
-    if (false || (document.domain == "odoo.com/web" || document.domain.substring(document.domain.indexOf(".odoo.com/web") + 1) == "odoo.com/web")
-                || (new RegExp("((http|https)://)?(www[.])?odoo.com/web.+")).test(document.location.href)
-                || (new RegExp("((http|https)://)?localhost:8069/web.+")).test(document.location.href)
-                || (new RegExp("((http|https)://)?localhost/web.+")).test(document.location.href)
-                || (new RegExp("/^http://[0-9]{6}\-[a-z0-9]{2}\-0\-[a-z0-9]{6}\.runbot[0-9]{2}\.odoo\.com/web(.*)$/")).test(document.location.href))
-        css += [
-            // General
+(function () {
+    'use strict';
+    setTimeout(function() {
+        let darkMode = document.getElementsByClassName('o_dark_mode');
+        if (darkMode.length == 0){
+            let debugMenu = document.getElementsByClassName('o_menu_systray');
+            let elemMenu = document.getElementsByClassName('o_mail_systray_item');
+            let darkMode = document.createElement('li');
+            darkMode.classList.add('o_dark_mode');
+            let clickable = document.createElement('span');
+            clickable.classList.add('fa', 'fa-moon-o');
+            clickable.style.height = '46px';
+            clickable.style.padding = '0 10px';
+            clickable.style.lineHeight = '46px';
+            clickable.style.textAlign = 'left';
+            if (debugMenu.length > 0){
+                darkMode.appendChild(clickable);
+                debugMenu[0].insertBefore(darkMode, elemMenu[0]);
+            }
+            clickable.addEventListener('click', addCss, false);
+        }
+    }, 3600);
+
+    var css = [
             "body{",
             "    background-color: #222222;",
             "    color: #bfbfbf;",
@@ -516,9 +531,7 @@
             ".ace-tm .ace_cursor {",
             "    color: #dfdfdf !important;",
             "}",
-            ".note-style.btn-group > div > ul,",
-            ".note-style.btn-group > div > ul > li,",
-            ".note-style.btn-group > div > ul > li > a {",
+            ".note-style.btn-group > div > ul,",".note-style.btn-group > div > ul > li,",".note-style.btn-group > div > ul > li > a {",
             "    color: initial;",
             "    background-color: initial;",
             "}",
@@ -723,32 +736,34 @@
             ".o_in_studio header{",
             "    background-color: #262C34;",
             "}",
-
-            // 11.0
-
-            //
-            // ".btn-default {",
-            // "    background-color: rgba(255, 255, 255, 0.25);",
-            // "    color: #FFFFFF;",
-            // "    border-color: #222222;",
-            // "}",
-        ].join("\n");
-    if (typeof GM_addStyle != "undefined") {
-        GM_addStyle(css);
-    } else if (typeof PRO_addStyle != "undefined") {
-        PRO_addStyle(css);
-    } else if (typeof addStyle != "undefined") {
-        addStyle(css);
-    } else {
-        var node = document.createElement("style");
-        node.type = "text/css";
-        node.appendChild(document.createTextNode(css));
-        var heads = document.getElementsByTagName("head");
-        if (heads.length > 0) {
-            heads[0].appendChild(node);
-        } else {
-            // no head yet, stick it whereever
-            document.documentElement.appendChild(node);
+    ].join("\n");
+    function addCss(ev){
+        var clickable = document.getElementsByClassName('o_dark_mode')[0].lastChild;
+        if (clickable.classList.contains('fa-moon-o')){
+            clickable.classList.remove('fa-moon-o');
+            clickable.classList.add('fa-sun-o');
+            var node = document.createElement("style");
+            node.setAttribute('id', 'style');
+            node.type = "text/css";
+            node.appendChild(document.createTextNode(css));
+            var heads = document.getElementsByTagName("head");
+            if (heads.length > 0) {
+                heads[0].appendChild(node);
+            } else {
+                // no head yet, stick it whereever
+                document.documentElement.appendChild(node);
+            }
+        }
+        else{
+            clickable.classList.remove('fa-sun-o');
+            clickable.classList.add('fa-moon-o');
+            node = document.getElementById('style');
+            heads = document.getElementsByTagName("head");
+            if (heads.length > 0) {
+                heads[0].removeChild(node);
+            } else {
+                // no head yet, stick it whereever
+                document.documentElement.removeChild(node);
+            }
         }
     }
-})();
