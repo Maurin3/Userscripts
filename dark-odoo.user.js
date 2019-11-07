@@ -13,14 +13,32 @@
 // @match        http://localhost:8069/web*
 // @match        http://localhost/web*
 // @run-at       document-start
-// @grant        none
+// @grant        GM.getValue
+// @grant        GM_getValue
+// @grant        GM.setValue
+// @grant        GM_setValue
 // @downloadURL  https://raw.githubusercontent.com/Maurin3/Userscripts/master/dark-odoo.user.js
 // @updateURL    https://raw.githubusercontent.com/Maurin3/Userscripts/master/dark-odoo.user.js
 // ==/UserScript==
 
-(function () {
+(async () => {
     'use strict';
-    setTimeout(function() {
+    var defaults = {'dark' : false };
+    let data = {};
+
+    async function getData(){
+        data = await GM.getValue("data", defaults);
+        try {
+            data = JSON.parse(data);
+            if (!Object.keys(data).length || ({}).toString.call(data) !== "[object Object]") {
+              throw new Error();
+            }
+          } catch (err) { // compat
+            data = await GM.getValue("data", defaults);
+          }
+    }
+
+    async function init() {
         let darkMode = document.getElementsByClassName('o_dark_mode');
         if (darkMode.length == 0){
             let debugMenu = document.getElementsByClassName('o_menu_systray');
@@ -28,18 +46,27 @@
             let darkMode = document.createElement('li');
             darkMode.classList.add('o_dark_mode');
             let clickable = document.createElement('span');
-            clickable.classList.add('fa', 'fa-moon-o');
             clickable.style.height = '46px';
             clickable.style.padding = '0 10px';
             clickable.style.lineHeight = '46px';
             clickable.style.textAlign = 'left';
+            await getData();
+            if (!data){
+                clickable.classList.add('fa', 'fa-moon-o');
+            }
+            else{
+                clickable.classList.add('fa', 'fa-sun-o');
+            }
             if (debugMenu.length > 0){
                 darkMode.appendChild(clickable);
                 debugMenu[0].insertBefore(darkMode, elemMenu[0]);
             }
             clickable.addEventListener('click', addCss, false);
+            if (data){
+                 await dark();
+            }
         }
-    }, 3600);
+    }
 
     var css = [
             "body{",
@@ -737,34 +764,54 @@
             "    background-color: #262C34;",
             "}",
     ].join("\n");
-    function addCss(ev){
+
+    window.onload = await init();
+
+    async function addCss(ev){
         var clickable = document.getElementsByClassName('o_dark_mode')[0].lastChild;
-        if (clickable.classList.contains('fa-moon-o')){
-            clickable.classList.remove('fa-moon-o');
-            clickable.classList.add('fa-sun-o');
-            var node = document.createElement("style");
-            node.setAttribute('id', 'style');
-            node.type = "text/css";
-            node.appendChild(document.createTextNode(css));
-            var heads = document.getElementsByTagName("head");
-            if (heads.length > 0) {
-                heads[0].appendChild(node);
-            } else {
-                // no head yet, stick it whereever
-                document.documentElement.appendChild(node);
-            }
+        await getData();
+        if (!data || clickable.classList.contains('fa-moon-o')){
+            dark();
+            await GM.setValue("data", JSON.stringify({ 'dark': true }));
         }
         else{
-            clickable.classList.remove('fa-sun-o');
-            clickable.classList.add('fa-moon-o');
-            node = document.getElementById('style');
-            heads = document.getElementsByTagName("head");
-            if (heads.length > 0) {
-                heads[0].removeChild(node);
-            } else {
-                // no head yet, stick it whereever
-                document.documentElement.removeChild(node);
-            }
+            light();
+            await GM.setValue("data", JSON.stringify({ 'dark': false }));
+        }
+    }
+
+    async function dark(){
+        console.log('dark');
+        var clickable = document.getElementsByClassName('o_dark_mode')[0].lastChild;
+        clickable.classList.remove('fa-moon-o');
+        clickable.classList.add('fa-sun-o');
+        var node = document.createElement("style");
+        node.setAttribute('id', 'style');
+        node.type = "text/css";
+        node.appendChild(document.createTextNode(css));
+        var heads = document.getElementsByTagName("head");
+        console.log(node);
+        if (heads.length > 0) {
+            heads[0].appendChild(node);
+        } else {
+            // no head yet, stick it whereever
+            document.documentElement.appendChild(node);
+        }
+    }
+
+    function light(){
+        console.log('light');
+        var clickable = document.getElementsByClassName('o_dark_mode')[0].lastChild;
+        clickable.classList.remove('fa-sun-o');
+        clickable.classList.add('fa-moon-o');
+        var node = document.getElementById('style');
+        var heads = document.getElementsByTagName("head");
+        console.log(node);
+        if (heads.length > 0) {
+            if (node) heads[0].removeChild(node);
+        } else {
+            // no head yet, stick it whereever
+            if (node) document.documentElement.removeChild(node);
         }
     }
 })();
