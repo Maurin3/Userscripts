@@ -19,6 +19,6 @@
             let pubs = document.querySelector('[data-test-id="app-dashboard"]').children[3];
             pubs.style.display = 'none';
         },
-        2300
+        3000
     );
 })();

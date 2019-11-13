@@ -30,7 +30,10 @@ Some useful userscripts :smirk:
 [original-dgo]: https://userstyles.org/styles/144028/google-clean-dark
 [original-me]: https://github.com/Maurin3/Userscripts
 
-**NB** : For the Remove ads for Tab for a Cause userscript, I use a Chrome extension named [Custom New Tab Url](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia?utm_source=chrome-ntp-icon) instead of their extension and set the URL to <https://tab.gladly.io/newtab/> (Make sure you have an account for this website)
+**NB** : For the 'Remove ads for Tab for a Cause' userscript, I use some extensions instead of their extension and set the URL to <https://tab.gladly.io/newtab/> (Make sure you have an account for this website/extension):
+
+* Chrome : [Custom New Tab Url](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia?utm_source=chrome-ntp-icon)
+* Firefox : [Newtab.urlEX](https://addons.mozilla.org/en-US/firefox/addon/newtab-urlex/?src=search)
 
 ## Updates
 
