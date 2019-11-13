@@ -84,43 +84,36 @@
     let impersonate = document.createElement('div');
     impersonate.classList.add('form-group', 'text-center');
 
-    let adminInput = document.createElement('input');
-    adminInput.classList.add('form-control', 'd-inline', 'btn', 'btn-outline-primary');
-    adminInput.setAttribute('type', 'button');
-    adminInput.style.width = 'calc(100% / 4)';
-    adminInput.value = 'Admin';
-    impersonate.appendChild(adminInput);
-    adminInput.addEventListener('click', adminConnect, false);
+    createButton('input', 'Admin', impersonate, adminConnect);
+    createButton('input', 'Demo', impersonate, demoConnect);
+    createButton('input', 'Other', impersonate, otherConnect);
+    createButton('button', 'Cancel', impersonate, cancelOther);
 
-    let demoInput = document.createElement('input');
-    demoInput.classList.add('form-control', 'd-inline', 'mx-3', 'btn', 'btn-outline-secondary');
-    demoInput.style.width = 'calc(100% / 4)';
-    demoInput.setAttribute('type', 'button');
-    demoInput.value = 'Demo';
-    impersonate.appendChild(demoInput);
-    demoInput.addEventListener('click', demoConnect, false);
-
-    let otherInput = document.createElement('input');
-    otherInput.classList.add('form-control', 'd-inline', 'btn', 'btn-outline-dark');
-    otherInput.setAttribute('type', 'button');
-    otherInput.style.width = 'calc(100% / 4)';
-    otherInput.value = 'Other';
-    impersonate.appendChild(otherInput);
-    otherInput.addEventListener('click', otherConnect, false);
-
-    let cancelOtherButton = document.createElement('button');
-    cancelOtherButton.style.display = 'none';
-    cancelOtherButton.innerHTML = 'Cancel';
-    cancelOtherButton.classList.add('btn', 'btn-outline-secondary', 'w-100');
-    cancelOtherButton.setAttribute('type', 'button');
-    impersonate.appendChild(cancelOtherButton);
-    cancelOtherButton.addEventListener('click', cancelOther, false);
-
-    function createButton(elemType, name, parentElem, color){
+    function createButton(elemType, name, parentElem, action){
         let button = document.createElement(elemType);
         button.setAttribute('type', 'button');
+        if (name === 'Admin' || name === 'Demo' || name === 'Other'){
+            button.style.width = 'calc(100% / 4)';
+            button.classList.add('form-control', 'd-inline', 'btn');
+            button.value = name;
+        }
+        switch(name){
+            case 'Admin':
+                button.classList.add('btn-outline-primary');
+                break;
+            case 'Demo':
+                button.classList.add('btn-outline-secondary', 'mx-3');
+                break;
+            case 'Other':
+                button.classList.add('btn-outline-dark');
+                break;
+            default: // cancelOtherButton, name = 'Cancel'
+                button.classList.add('btn', 'btn-outline-secondary', 'w-100');
+                button.style.display = 'none';
+                button.innerHTML = name;
+        }
         parentElem.appendChild(button);
-        cancelOtherButton.addEventListener('click', cancelOther, false);
+        button.addEventListener('click', action, false);
     }
 
     let form = document.forms[0];
