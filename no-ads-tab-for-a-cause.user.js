@@ -3,7 +3,7 @@
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/tfc.png?raw=true
 // @namespace    https://github.com/Maurin3
 // @version      1.0
-// @description  try to take over the world!
+// @description  Remove the display of ads in a tab with Tab For A Cause in URL
 // @author       Maurin3
 // @match        https://tab.gladly.io/newtab/
 // @grant        none
