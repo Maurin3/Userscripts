@@ -16,9 +16,9 @@
     'use strict';
     setTimeout(
         function(){
-            let pubs = document.querySelector('[data-test-id="app-dashboard"]').children[3];
-            pubs.style.display = 'none';
+            let ads = document.querySelector('[data-test-id="app-dashboard"]').lastChild;
+            ads.style.display = 'none';
         },
-        3000
+        3200
     );
 })();
