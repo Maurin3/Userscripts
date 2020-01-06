@@ -15,7 +15,7 @@ Some useful userscripts :smirk:
 |-------------------------|:------------------:|:-------------------------------------------------------------------------------------:|
 | Dark Odoo               | [install][doo-raw] | ![alt text](https://img.shields.io/badge/Version-Beta-C4246A.svg "Version Beta") |
 | Odoo Admin Auto Connect | [install][aac-raw] | ![alt text](https://img.shields.io/badge/Version-1.0-C4246A.svg "Version 1.0")   |
-| Odoo Quick Connect      | [install][oqc-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")   |
+| Odoo Quick Connect      | [install][oqc-raw] | ![alt text](https://img.shields.io/badge/Version-1.2-C4246A.svg "Version 1.2")   |
 | Dark Odoo.sh            | [install][dsh-raw] | ![alt text](https://img.shields.io/badge/Version-1.0-C4246A.svg "Version 1.0")   |
 
 [doo-raw]: https://github.com/Maurin3/userscripts/raw/master/dark-odoo.user.js

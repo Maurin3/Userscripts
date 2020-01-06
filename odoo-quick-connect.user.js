@@ -2,12 +2,14 @@
 // @name         Odoo Quick Connect
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/oqc.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      1.1
+// @version      1.2
 // @description  Select the impersonation in runbots of odoo.com (and local instance)
 // @author       Maurin3
 // @include      /^http://[0-9]{6}\-(saas\-)?[0-9]{2}\-[0-9]+\-[a-z0-9]{6}\.runbot[0-9]{2}\.odoo\.com/web/login*$/
 // @match        http://localhost:8069/web/login*
+// @match        http://localhost:8069/web/*/login*
 // @match        http://localhost/web/login*
+// @match        http://localhost/web/*/login*
 // @downloadURL  https://raw.githubusercontent.com/Maurin3/Userscripts/master/odoo-quick-connect.user.js
 // @updateURL    https://raw.githubusercontent.com/Maurin3/Userscripts/master/odoo-quick-connect.user.js
 // @run-at       document-end
@@ -84,10 +86,11 @@
     let impersonate = document.createElement('div');
     impersonate.classList.add('form-group', 'text-center');
 
-    createButton('input', 'Admin', impersonate, adminConnect);
-    createButton('input', 'Demo', impersonate, demoConnect);
-    createButton('input', 'Other', impersonate, otherConnect);
-    createButton('button', 'Cancel', impersonate, cancelOther);
+    let adminInput = createButton('input', 'Admin', impersonate, adminConnect);
+    let demoInput = createButton('input', 'Demo', impersonate, demoConnect);
+    let otherInput = createButton('input', 'Other', impersonate, otherConnect);
+    let cancelOtherButton = createButton('button', 'Cancel', impersonate, cancelOther);
+
 
     function createButton(elemType, name, parentElem, action){
         let button = document.createElement(elemType);
@@ -114,6 +117,7 @@
         }
         parentElem.appendChild(button);
         button.addEventListener('click', action, false);
+        return button;
     }
 
     let form = document.forms[0];
