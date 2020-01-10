@@ -2,7 +2,7 @@
 // @name         Odoo Quick Connect
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/oqc.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      1.2
+// @version      1.3
 // @description  Select the impersonation in runbots of odoo.com (and local instance)
 // @author       Maurin3
 // @include      /^http://[0-9]{6}\-(saas\-)?[0-9]{2}\-[0-9]+\-[a-z0-9]{6}\.runbot[0-9]{2}\.odoo\.com/web/login*$/
@@ -108,7 +108,7 @@
                 button.classList.add('btn-outline-secondary', 'mx-3');
                 break;
             case 'Other':
-                button.classList.add('btn-outline-dark');
+                button.classList.add('btn-outline-epsilon');
                 break;
             default: // cancelOtherButton, name = 'Cancel'
                 button.classList.add('btn', 'btn-outline-secondary', 'w-100');
