@@ -2,7 +2,7 @@
 // @name         Dark theme for odoo.sh
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/dsh.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      1.0
+// @version      1.1
 // @description  Make odoo.sh dark
 // @author       Maurin3
 // @match        https://www.odoo.sh/*
@@ -108,6 +108,9 @@
         ".o_branch_history .js_history_item + .js_history_item{",
         "    border-color: #222222;",
         "}",
+        ".o_branch_history .o_tracking .o_tracking_commits .o_tracking_commit .o_tracking_commit_msg {",
+        "    white-space: normal !important;",
+        "}",
 
         // Builds Page
         ".o_builds_view .o_builds_card.o_success {",
@@ -149,7 +152,7 @@
 
 
         // .o_project_container.o_sh_projects_list .o_project_cards .o_projects_head --> color : #dfdfdf;
-        
+
         // Branch Logs Page
         ".o_sh_log_form{",
         "    background-color: #222;",
