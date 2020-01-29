@@ -2,13 +2,13 @@
 // @name         Dark theme for Odoo
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/doo.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      0.3.0
+// @version      0.3.1
 // @description  Make all odoo.com domains dark (local version too)
 // @author       Maurin3
 // @match        https://www.*.odoo.com/web*
 // @match        https://www.*.dev.odoo.com/web*
 // @match        https://*.odoo.com/web*
-// @include      /^http://[0-9]{6}\-[a-z0-9]{2}\-0\-[a-z0-9]{6}\.runbot[0-9]{2}\.odoo\.com/web(.*)$/
+// @include      /^http://[0-9]{5,}\-[a-z0-9]{2}\-0\-[a-z0-9]{5,}\.runbot[0-9]{2}\.odoo\.com/web(.*)$/
 // @match        https://www.odoo.com/web*
 // @match        http://localhost:8069/web*
 // @match        http://localhost/web*
@@ -779,11 +779,11 @@
         await getData();
         if (!data.dark || clickable.classList.contains('fa-moon-o')){
             dark(clickable);
-            await GM.setValue("data", JSON.stringify({ 'dark': true }));
+            await GM.setValue("data", JSON.stringify({'dark': true }));
         }
         else{
             light(clickable);
-            await GM.setValue("data", JSON.stringify({ 'dark': false }));
+            await GM.setValue("data", JSON.stringify({'dark': false }));
         }
     }
 

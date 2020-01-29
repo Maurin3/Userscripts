@@ -64,6 +64,10 @@
         "}",
         ".o_branch_history .o_tracking .o_tracking_commits .o_tracking_commit .o_tracking_commit_body{",
         "    background-color: rgba(128, 128, 128, 0.25);",
+        "    white-space: break-spaces !important;",
+        "}",
+        ".o_tracking_commit_body > .o_tracking_commit_body {",
+        "    white-space: break-spaces !important;",
         "}",
 
         // General Settings Page
