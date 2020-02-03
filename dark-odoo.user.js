@@ -2,7 +2,7 @@
 // @name         Dark theme for Odoo
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/doo.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      1.0
+// @version      1.1
 // @description  Make all odoo.com domains dark (local version too)
 // @author       Maurin3
 // @match        https://www.*.odoo.com/web*
@@ -10,7 +10,7 @@
 // @match        https://*.odoo.com/web*
 // @include      /^http://[0-9]{5,}\-[a-z0-9]{2}\-0\-[a-z0-9]{5,}\.runbot[0-9]{2}\.odoo\.com/web(.*)$/
 // @match        https://www.odoo.com/web*
-// @include      /^http://localhost[0-9:]{0,5}/[a-z]{0,4}/web*$/
+// @include      /^http://localhost(:)?[0-9]{0,5}(/)?[a-z]{0,4}/web*$/
 // @run-at       document-start
 // @grant        GM.getValue
 // @grant        GM_getValue
