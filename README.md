@@ -11,17 +11,22 @@ Some useful userscripts :smirk:
 
 2. Install:
 
-| Userscript              | Install            | Version                                                                                |
-|-------------------------|:------------------:|:--------------------------------------------------------------------------------------:|
-| Dark Odoo               | [install][doo-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")      |
-| Odoo Admin Auto Connect | [install][aac-raw] | ![alt text](https://img.shields.io/badge/Version-1.0-C4246A.svg "Version 1.0")        |
-| Odoo Quick Connect      | [install][oqc-raw] | ![alt text](https://img.shields.io/badge/Version-1.4.3-C4246A.svg "Version 1.4.3")    |
-| Dark Odoo.sh            | [install][dsh-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")        |
+| Userscript              | Install            | Version                                                                            | Original author           |
+|-------------------------|:------------------:|:----------------------------------------------------------------------------------:| :------------------------:|
+| Dark Odoo               | [install][doo-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     | [Maurin3][original-me]    |
+| Odoo Admin Auto Connect | [install][aac-raw] | ![alt text](https://img.shields.io/badge/Version-1.0-C4246A.svg "Version 1.0")     | [Maurin3][original-me]    |
+| Odoo Quick Connect      | [install][oqc-raw] | ![alt text](https://img.shields.io/badge/Version-1.4.3-C4246A.svg "Version 1.4.3") | [Maurin3][original-me]    |
+| Dark Odoo.sh            | [install][dsh-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     | [Maurin3][original-me]    |
+| Dark Google             | [install][dgo-raw] | ![alt text](https://img.shields.io/badge/Version-Alpha-C4246A.svg "Version Alpha") | [Seishiin][original-dgo]  |
 
-[doo-raw]: https://github.com/Maurin3/userscripts/raw/master/dark-odoo.user.js
-[aac-raw]: https://github.com/Maurin3/userscripts/raw/master/odoo-admin-auto-connect.user.js
-[oqc-raw]: https://github.com/Maurin3/userscripts/raw/master/odoo-quick-connect.user.js
-[dsh-raw]: https://github.com/Maurin3/userscripts/raw/master/dark-odoo-sh.user.js
+[doo-raw]: https://github.com/Maurin3/Userscripts/raw/master/dark-odoo.user.js
+[aac-raw]: https://github.com/Maurin3/Userscripts/raw/master/odoo-admin-auto-connect.user.js
+[oqc-raw]: https://github.com/Maurin3/Userscripts/raw/master/odoo-quick-connect.user.js
+[dsh-raw]: https://github.com/Maurin3/Userscripts/raw/master/dark-odoo-sh.user.js
+[dgo-raw]: https://github.com/Maurin3/Userscripts/raw/master/google-dark.user.js
+
+[original-dgo]: https://userstyles.org/styles/144028/google-clean-dark
+[original-me]: https://github.com/Maurin3/Userscripts
 
 ## Updates
 
