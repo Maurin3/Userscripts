@@ -1,15 +1,24 @@
 // ==UserScript==
 // @name               Google - Clean Dark
-// @namespace          http://userstyles.org
+// @namespace          https://github.com/Maurin3
 // @description        A dark and sleek theme for google
 // @author             Maurin3 (originally done by Seishiin)
-// @homepage           https://userstyles.org/styles/144028
 // @run-at             document-start
-// @version            0.1
+// @match              http://*.google.com/*
+// @match              https://*.google.com/*
+// @match              https://google.com/*
+// @match              http://google.com/*
+// @match              http://*.google.com
+// @match              https://*.google.com
+// @match              https://google.com
+// @match              http://google.com
+// @version            0.1.1
+// @downloadURL        https://raw.githubusercontent.com/Maurin3/Userscripts/master/google-dark.user.js
+// @updateURL          https://raw.githubusercontent.com/Maurin3/Userscripts/master/google-dark.user.js
 // ==/UserScript==
 (function() {
     var css = "";
-if (false || (new RegExp("^https?://(www|encrypted|images|translate|accounts|books|photos).google.(com|([a-z]{2}))(.[a-z]{2})?/(?!mobile|flights|intl|alerts|finance|calendar|nexus|contacts|services|voice|business|maps|dashboard|settings|android|adsense|analytics|doodles|chrome|fonts|patents|translate_p|recaptcha).*$")).test(document.location.href))
+    if (false || (new RegExp("^https?://(www|encrypted|images|translate|accounts|books|photos).google.(com|([a-z]{2}))(.[a-z]{2})?/(?!mobile|flights|intl|alerts|finance|calendar|nexus|contacts|services|voice|business|maps|dashboard|settings|android|adsense|analytics|doodles|chrome|fonts|patents|translate_p|recaptcha).*$")).test(document.location.href))
     css += [
         "/*** Main page ***/",
         "body, html {",
@@ -54,6 +63,9 @@ if (false || (new RegExp("^https?://(www|encrypted|images|translate|accounts|boo
         ".sbib_a, .sbsb_a, .RNNXgb, .aajZCb {",
         "    background: #1b1b1b!important;",
         "}",
+        ".JolIgv, .JolIg.i8lZMc{",
+        "    color:  #e8e8e8!important;",
+        "}",
         ".ac-renderer {",
         "    background-color: #1b1b1b!important;",
         "    border-color: #1b1b1b!important;",
@@ -91,8 +103,15 @@ if (false || (new RegExp("^https?://(www|encrypted|images|translate|accounts|boo
         "    border-color: #333!important;",
         "    color: #e8e8e8!important;",
         "}",
-        ".w8qArf .fl {",
+        ".w8qArf .fl, .w8qArf a.fl {",
         "    color: #e8e8e8!important;",
+        "}",
+        ".VqFMTc.p8AiDd {",
+        "    color: #dedede!important;",
+        "    background-color: #252525!important;",
+        "}",
+        ".Ywxp6b {",
+        "    color: #dedede!important;",
         "}",
         ".RNNXgb {",
         "    border-color: transparent!important;",
@@ -2970,6 +2989,15 @@ if (false || (document.location.href.indexOf("https://calendar.google") == 0))
         "}",
         ".hEtGGf::after {",
         "    display: none!important;",
+        "}",
+        ".w61Ns.pCoqfc{",
+        "    background-color: #3e3e3e!important;",
+        "}",
+        "#rAECCd {",
+        "    color: #5f6368;",
+        "}",
+        ".xrDeeb.SJbruc {",
+        "    background: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2212%22%20height%3D%2212%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22#252525%22%20fill-rule%3D%22nonzero%22%3E%3Cpath%20fill%3D%22%23F8F9FA%22%20d%3D%22M0%200h12v12H0z%22%2F%3E%3Cpath%20d%3D%22M6%200h6L0%2012V6l6-6zm6%206v6H6l6-6z%22%20fill%3D%22%23EEF0F2%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') #252525 repeat fixed",
         "}",
         "/* Settings */",
         ".xpYref, .WefNYe:before {",
