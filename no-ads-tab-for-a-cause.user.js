@@ -2,7 +2,7 @@
 // @name         Remove ads for Tab for a Cause
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/tfc.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      1.0
+// @version      0.1
 // @description  Remove the display of ads in a tab with Tab For A Cause in URL
 // @author       Maurin3
 // @match        https://tab.gladly.io/newtab/
