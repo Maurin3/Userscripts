@@ -35,6 +35,8 @@ Some useful userscripts :smirk:
 * Chrome : [Custom New Tab Url](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia?utm_source=chrome-ntp-icon)
 * Firefox : [Newtab.urlEX](https://addons.mozilla.org/en-US/firefox/addon/newtab-urlex/?src=search)
 
+Note : Dark Google is under CC BY-NC license.
+
 ## Updates
 
 These userscripts are automatically updated within Tampermonkey (or Greasemonkey, Violent Monkey). You can click on "check updates" or click on the install link again to update the userscript.
