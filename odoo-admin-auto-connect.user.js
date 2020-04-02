@@ -2,12 +2,11 @@
 // @name         Odoo Admin Auto Connect
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/aac.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      1.0
+// @version      1.1.1
 // @description  Auto connect as admin in runbots of odoo.com (and local instance)
 // @author       Maurin3
-// @include      /^http://[0-9]{6}\-(saas\-)?[0-9]{2}\-[0-9]+\-[a-z0-9]{6}\.runbot[0-9]{2}\.odoo\.com/web/login$/
-// @match        http://localhost:8069/web/login
-// @match        http://localhost/web/login
+// @include      /^http(s)?:\/\/[0-9]{5,}\-(saas\-)?[0-9]{2}\-[0-9]+\-[a-z0-9]{5,}\.runbot[0-9]{2}\.odoo\.com\/web\/login*$/
+// @include      /^http(s)?:\/\/localhost(:)?[0-9]{0,5}(\/)?[a-z]{0,2}(_)?[A-Z]{0,2}\/web\/login*$/
 // @downloadURL  https://raw.githubusercontent.com/Maurin3/Userscripts/master/odoo-admin-auto-connect.user.js
 // @updateURL    https://raw.githubusercontent.com/Maurin3/Userscripts/master/odoo-admin-auto-connect.user.js
 // @run-at       document-end

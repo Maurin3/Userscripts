@@ -14,7 +14,7 @@ Some useful userscripts :smirk:
 | Userscript                     | Install            | Version                                                                            | Original author           |
 |--------------------------------|:------------------:|:----------------------------------------------------------------------------------:| :------------------------:|
 | Dark Odoo                      | [install][doo-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     | [Maurin3][original-me]    |
-| Odoo Admin Auto Connect        | [install][aac-raw] | ![alt text](https://img.shields.io/badge/Version-1.0-C4246A.svg "Version 1.0")     | [Maurin3][original-me]    |
+| Odoo Admin Auto Connect        | [install][aac-raw] | ![alt text](https://img.shields.io/badge/Version-1.1.1-C4246A.svg "Version 1.1.1") | [Maurin3][original-me]    |
 | Odoo Quick Connect             | [install][oqc-raw] | ![alt text](https://img.shields.io/badge/Version-1.4.4-C4246A.svg "Version 1.4.4") | [Maurin3][original-me]    |
 | Dark Odoo.sh                   | [install][dsh-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     | [Maurin3][original-me]    |
 | Dark Google                    | [install][dgo-raw] | ![alt text](https://img.shields.io/badge/Version-Alpha-C4246A.svg "Version Alpha") | [Seishiin][original-dgo]  |
