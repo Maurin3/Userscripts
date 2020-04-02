@@ -37,7 +37,7 @@
         try {
             data = JSON.parse(data);
             if (!Object.keys(data).length || ({}).toString.call(data) !== "[object Object]") {
-              throw new Error();
+                throw new Error();
             }
         }
         catch (err) {
@@ -69,7 +69,7 @@
             }, 3600);
             clickable.addEventListener('click', addCss, false);
             if (data.dark){
-                 dark(clickable);
+                dark(clickable);
             }
         }
     }
