@@ -18,7 +18,7 @@ Some useful userscripts :smirk:
 | Odoo Quick Connect             | [install][oqc-raw] | ![alt text](https://img.shields.io/badge/Version-1.4.4-C4246A.svg "Version 1.4.4") | [Maurin3][original-me]    |
 | Dark Odoo.sh                   | [install][dsh-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     | [Maurin3][original-me]    |
 | Dark Google                    | [install][dgo-raw] | ![alt text](https://img.shields.io/badge/Version-Alpha-C4246A.svg "Version Alpha") | [Seishiin][original-dgo]  |
-| Remove ads for Tab for a Cause | [install][tfc-raw] | ![alt text](https://img.shields.io/badge/Version-Alpha-C4246A.svg "Version Alpha") | [Maurin3][original-me]    |
+| Remove ads for Tab for a Cause | [install][tfc-raw] | ![alt text](https://img.shields.io/badge/Version-1.0-C4246A.svg "Version 1.0")     | [Maurin3][original-me]    |
 
 [doo-raw]: https://github.com/Maurin3/Userscripts/raw/master/dark-odoo.user.js
 [aac-raw]: https://github.com/Maurin3/Userscripts/raw/master/odoo-admin-auto-connect.user.js
