@@ -149,6 +149,22 @@
         ".form-control option{",
         "    background-color: #222222;",
         "}",
+        "@media (min-width: 760px){",
+        "    #wrapwrap main{",
+        "        padding-top: 80px !important;",
+        "    }",
+        "    .odoo_sh > header .navbar{",
+        "        height: 80px !important;",
+        "    ",
+        "}",
+        "@media (min-width: 1200px){",
+        "    #wrapwrap main{",
+        "        padding-top: 40px !important;",
+        "    }",
+        "    .odoo_sh > header .navbar{",
+        "        height: 40px !important;",
+        "    ",
+        "}",
 
 
         // .o_project_container.o_sh_projects_list .o_project_cards .o_projects_head --> color : #dfdfdf;
