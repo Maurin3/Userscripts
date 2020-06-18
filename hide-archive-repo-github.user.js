@@ -2,14 +2,14 @@
 // @name         Hide Archived Repos GitHub
 // @icon         https://github.githubassets.com/pinned-octocat.svg
 // @namespace    https://github.com/Maurin3
-// @version      1.0
+// @version      1.1
 // @description  Hide archived repositories (private and public) on GitHub
 // @author       Maurin3
 // @include      https://github.com/*
 // @grant        none
 // @run-at       document-end
-// @downloadURL  https://raw.githubusercontent.com/Maurin3/Userscripts/master/dark-odoo-sh.user.js
-// @updateURL    https://raw.githubusercontent.com/Maurin3/Userscripts/master/dark-odoo-sh.user.js
+// @downloadURL  https://raw.githubusercontent.com/Maurin3/Userscripts/master/hide-archive-repo-github.user.js
+// @updateURL    https://raw.githubusercontent.com/Maurin3/Userscripts/master/hide-archive-repo-github.user.js
 // ==/UserScript==
 
 (function() {
