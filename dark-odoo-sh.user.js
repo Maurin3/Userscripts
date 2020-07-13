@@ -2,7 +2,7 @@
 // @name         Dark theme for odoo.sh
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/dsh.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      1.2
+// @version      1.2.1
 // @description  Make odoo.sh dark
 // @author       Maurin3
 // @match        https://www.odoo.sh/*
@@ -55,7 +55,7 @@
         "    background-color: #383838;",
         "    color: #FFFFFF;",
         "}",
-        ".text-800 {",
+        ".text-800, .btn {",
         "    color: #FFFFFF !important;",
         "}",
         ".table {",
@@ -108,6 +108,18 @@
         ".dropdown-menu, .dropdown-menu a{",
         "    background-color: #222222 !important;",
         "    color: #FFFFFF !important;",
+        "}",
+        ".o_branch_buttons{",
+        "    background-color: #3A404A !important;",
+        "}",
+        ".js_git_command {",
+        "    background-color: #383838 !important;",
+        "    color: #FFFFFF !important;",
+        "}",
+        ".js_copy_command {",
+        "    background-color: #222222 !important;",
+        "    color: #FFFFFF !important;",
+        "    box-shadow: none !important",
         "}",
 
         // General Settings Page
@@ -236,9 +248,6 @@
         ".text-700{",
         "    color: #bfbfbf !important;",
         "}",
-
-
-        // .o_project_container.o_sh_projects_list .o_project_cards .o_projects_head --> color : #dfdfdf;
 
         // Branch Logs Page
         ".o_sh_log_form{",
