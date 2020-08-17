@@ -145,6 +145,10 @@ a.bg-100:hover, a.bg-100:focus, button.bg-100:hover, button.bg-100:focus {
     background-color: #0e1f25;
     color: #d1ecf1;
 }
+.alert-danger {
+    color: #f8d7da;
+    background-color: #240f0f;
+}
 
 /* Branch Settings Page */
 .o_branch_settings_wrapper .o_settings_pricing .table tr:nth-last-child(n + 1) td, .o_settings_wrapper .o_settings_pricing .table tr:nth-last-child(n + 1) td, .list-group-item, .o_settings_wrapper .o_github_search_box .form-control  {
@@ -221,7 +225,12 @@ a.bg-100:hover, a.bg-100:focus, button.bg-100:hover, button.bg-100:focus {
     background-color: #222222 !important;
     border-radius: 15px;
 }
-
+.o_card_footer{
+    background-color: transparent !important;
+}
+.bg-200.border-bottom.border-top{
+    background-color: #1b1b1b !important;
+}
 
 /* Create Project Page */
 .o_location .panel label.control-label {
