@@ -2,11 +2,11 @@
 // @name         Odoo Quick Connect
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/oqc.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      1.4.5
+// @version      1.4.6
 // @description  Select the impersonation in runbots of odoo.com (and local instance)
 // @author       Maurin3
-// @include      ^http(s)?:\/\/[0-9]{5,}\-(saas\-)?[0-9]{2}\-[0-9]+\-[a-z0-9]{5,}\.runbot[0-9]{2}\.odoo\.com(\/)?[a-z]{0,2}(_)?[A-Z]{0,2}\/web\/login*$/
-// @include      /^http(s)?:\/\/localhost(:)?[0-9]{0,5}(\/)?[a-z]{0,2}(_)?[A-Z]{0,2}\/web\/login*$/
+// @include      /^^http(s)?:\/\/[0-9]{5,}\-(saas\-)?[0-9]{2}\-[0-9]+\.runbot[0-9]{2}\.odoo\.com(\/)?[a-z]{0,2}(_)?[A-Z]{0,2}\/web\/login(\?debug=)?/
+// @include      /^http(s)?:\/\/localhost(:)?[0-9]{0,5}(\/)?[a-z]{0,2}(_)?[A-Z]{0,2}\/web\/login(\?debug=)?/
 // @downloadURL  https://raw.githubusercontent.com/Maurin3/Userscripts/master/odoo-quick-connect.user.js
 // @updateURL    https://raw.githubusercontent.com/Maurin3/Userscripts/master/odoo-quick-connect.user.js
 // @run-at       document-end
@@ -93,8 +93,7 @@
         let button = document.createElement(elemType);
         button.setAttribute('type', 'button');
         if (name === 'Admin' || name === 'Demo' || name === 'Other'){
-            button.style.width = 'calc(100% / 4)';
-            button.classList.add('form-control', 'd-inline', 'btn');
+            button.classList.add('form-control', 'd-inline', 'btn', 'my-2');
             button.value = name;
         }
         switch(name){
@@ -102,7 +101,7 @@
                 button.classList.add('btn-outline-primary');
                 break;
             case 'Demo':
-                button.classList.add('btn-outline-secondary', 'mx-3');
+                button.classList.add('btn-outline-secondary');
                 break;
             case 'Other':
                 button.classList.add('btn-outline-info');
