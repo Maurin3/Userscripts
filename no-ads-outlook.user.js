@@ -15,7 +15,6 @@
     'use strict';
     var observer = new MutationObserver(function () {
         let ads = document.getElementsByClassName('_3_hHr3kfEhbNYRFM5YJxH9')[0];
-        console.log(ads);
         if (ads != undefined || ads != null) {
             ads.style.display = 'none';
             observer.disconnect();
