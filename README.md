@@ -20,7 +20,7 @@ Some useful userscripts :smirk:
 | Dark Google                    | [install][dgo-raw] | ![alt text](https://img.shields.io/badge/Version-Alpha-C4246A.svg "Version Alpha") | [Seishiin][original-dgo]  |
 | Remove ads for Tab for a Cause | [install][tfc-raw] | ![alt text](https://img.shields.io/badge/Version-1.0-C4246A.svg "Version 1.0")     | [Maurin3][original-me]    |
 | Hide Archived Repos GitHub     | [install][har-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     | [Maurin3][original-me]    |
-| Remove ads for Outlook         | [install][nao-raw] | ![alt text](https://img.shields.io/badge/Version-1.0-C4246A.svg "Version 1.0")     | [Maurin3][original-me]    |
+| Remove ads for Outlook         | [install][nao-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     | [Maurin3][original-me]    |
 
 [doo-raw]: https://github.com/Maurin3/Userscripts/raw/master/dark-odoo.user.js
 [aac-raw]: https://github.com/Maurin3/Userscripts/raw/master/odoo-admin-auto-connect.user.js
