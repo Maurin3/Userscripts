@@ -4,7 +4,7 @@
 // @version      1.1
 // @description  Remove the display of ads in Outlook
 // @author       Maurin3
-// @match        https://outlook.live.com/mail/0/inbox/*
+// @match        https://outlook.live.com/mail/*
 // @grant        none
 // @run-at       document-end
 // @downloadURL  https://raw.githubusercontent.com/Maurin3/Userscripts/master/no-ads-outlook.user.js
