@@ -71,7 +71,7 @@ a.text-800:hover {
     white-space: break-spaces !important;
 }
 .o_tracking_commits > .o_tracking_commit {
-    background-color: rgba(255,255,255,0.05) !important;
+    background-color: #444444 !important;
 }
 .o_branch_history .o_sh_tracking_icon .gi {
     background-color: #222222 !important;
