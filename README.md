@@ -11,15 +11,15 @@ Some useful userscripts :smirk:
 
 2. Install:
 
-| Userscript                     | Install            | Version                                                                            | Original author           |
-|--------------------------------|:------------------:|:----------------------------------------------------------------------------------:| :------------------------:|
-| Dark Odoo                      | [install][doo-raw] | ![alt text](https://img.shields.io/badge/Version-1.2.2-C4246A.svg "Version 1.2.2") | [Maurin3][original-me]    |
-| Odoo Admin Auto Connect        | [install][aac-raw] | ![alt text](https://img.shields.io/badge/Version-1.1.2-C4246A.svg "Version 1.1.2") | [Maurin3][original-me]    |
-| Odoo Quick Connect             | [install][oqc-raw] | ![alt text](https://img.shields.io/badge/Version-1.4.6-C4246A.svg "Version 1.4.6") | [Maurin3][original-me]    |
-| Dark Odoo.sh                   | [install][dsh-raw] | ![alt text](https://img.shields.io/badge/Version-1.2.2-C4246A.svg "Version 1.2.2") | [Maurin3][original-me]    |
-| Remove ads for Tab for a Cause | [install][tfc-raw] | ![alt text](https://img.shields.io/badge/Version-1.0-C4246A.svg "Version 1.0")     | [Maurin3][original-me]    |
-| Hide Archived Repos GitHub     | [install][har-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     | [Maurin3][original-me]    |
-| Remove ads for Outlook         | [install][nao-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     | [Maurin3][original-me]    |
+| Userscript                     | Install            | Version                                                                            |
+|--------------------------------|:------------------:|:----------------------------------------------------------------------------------:|
+| Dark Odoo                      | [install][doo-raw] | ![alt text](https://img.shields.io/badge/Version-1.2.2-C4246A.svg "Version 1.2.2") |
+| Odoo Admin Auto Connect        | [install][aac-raw] | ![alt text](https://img.shields.io/badge/Version-1.1.2-C4246A.svg "Version 1.1.2") |
+| Odoo Quick Connect             | [install][oqc-raw] | ![alt text](https://img.shields.io/badge/Version-1.4.6-C4246A.svg "Version 1.4.6") |
+| Dark Odoo.sh                   | [install][dsh-raw] | ![alt text](https://img.shields.io/badge/Version-1.2.2-C4246A.svg "Version 1.2.2") |
+| Remove ads for Tab for a Cause | [install][tfc-raw] | ![alt text](https://img.shields.io/badge/Version-1.0-C4246A.svg "Version 1.0")     |
+| Hide Archived Repos GitHub     | [install][har-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     |
+| Remove ads for Outlook         | [install][nao-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     |
 
 [doo-raw]: https://github.com/Maurin3/Userscripts/raw/master/dark-odoo.user.js
 [aac-raw]: https://github.com/Maurin3/Userscripts/raw/master/odoo-admin-auto-connect.user.js
@@ -28,8 +28,6 @@ Some useful userscripts :smirk:
 [tfc-raw]: https://github.com/Maurin3/Userscripts/raw/master/no-ads-tab-for-a-cause.user.js
 [har-raw]: https://github.com/Maurin3/Userscripts/raw/master/hide-archive-repo-github.user.js
 [nao-raw]: https://github.com/Maurin3/Userscripts/raw/master/no-ads-outlook.user.js
-
-[original-me]: https://github.com/Maurin3/Userscripts
 
 **NB** : For the 'Remove ads for Tab for a Cause' userscript, I use some extensions instead of their extension and set the URL to <https://tab.gladly.io/newtab/> (Make sure you have an account for this website/extension):
 
