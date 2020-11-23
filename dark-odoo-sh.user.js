@@ -15,7 +15,7 @@
 // @grant        GM_setValue
 // @grant        GM.xmlHttpRequest
 // @grant        GM_xmlhttpRequest
-// @connect      http://localhost:8000
+// @connect      localhost
 // @connect      raw.githubusercontent.com
 // @downloadURL  https://raw.githubusercontent.com/Maurin3/Userscripts/master/dark-odoo-sh.user.js
 // @updateURL    https://raw.githubusercontent.com/Maurin3/Userscripts/master/dark-odoo-sh.user.js
@@ -28,7 +28,7 @@
     var css = false;
     // NOTE: run python to get elements available locally
     // CMD: python -m SimpleHTTPServer
-    const isDebug = false;
+    const isDebug = true;
 
     function setStyle(element) {
         element.style.color = 'rgba(255, 255, 255, 0.8)';

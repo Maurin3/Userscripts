@@ -19,6 +19,7 @@
 // @grant        GM.xmlHttpRequest
 // @grant        GM_xmlhttpRequest
 // @connect      raw.githubusercontent.com
+// @connect      localhost
 // @downloadURL  https://raw.githubusercontent.com/Maurin3/Userscripts/master/dark-odoo.user.js
 // @updateURL    https://raw.githubusercontent.com/Maurin3/Userscripts/master/dark-odoo.user.js
 // ==/UserScript==
@@ -28,6 +29,9 @@
     var defaults = { 'dark': false };
     let data = {};
     var css = false;
+    // NOTE: run python to get elements available locally
+    // CMD: python -m SimpleHTTPServer
+    const isDebug = true;
 
     function setStyle(element) {
         element.style.height = '46px';
@@ -141,7 +145,13 @@
     }
 
     async function retrieveCss() {
-        var root = "https://raw.githubusercontent.com/Maurin3/Userscripts/master/css/"
+        var root = "";
+        if (isDebug){
+            root = "http://localhost:8000/css/";
+        }
+        else{
+            root = "https://raw.githubusercontent.com/Maurin3/Userscripts/master/css/";
+        }
         console.info(`Fetching ${root}doo.css`);
         await GM.xmlHttpRequest({
             method: "GET",
