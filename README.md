@@ -19,7 +19,7 @@ Some useful userscripts :smirk:
 | Dark Odoo.sh                   | [install][dsh-raw] | ![alt text](https://img.shields.io/badge/Version-1.2.2-C4246A.svg "Version 1.2.2") |
 | Remove ads for Tab for a Cause | [install][tfc-raw] | ![alt text](https://img.shields.io/badge/Version-1.0-C4246A.svg "Version 1.0")     |
 | Hide Archived Repos GitHub     | [install][har-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     |
-| Remove ads for Outlook         | [install][nao-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     |
+| Remove ads for Outlook         | [install][nao-raw] | ![alt text](https://img.shields.io/badge/Version-1.2-C4246A.svg "Version 1.2")     |
 
 [doo-raw]: https://github.com/Maurin3/Userscripts/raw/master/dark-odoo.user.js
 [aac-raw]: https://github.com/Maurin3/Userscripts/raw/master/odoo-admin-auto-connect.user.js
