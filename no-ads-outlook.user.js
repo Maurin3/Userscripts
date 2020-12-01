@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Remove ads for Outlook 
+// @name         Remove ads for Outlook
 // @namespace    https://github.com/Maurin3
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/nao.png?raw=true
 // @version      1.2
