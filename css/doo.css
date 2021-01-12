@@ -168,7 +168,12 @@ iew_controller{
 .o_thread_message .o_mail_discussion strong,
 .o_chatter .oe_chatter,
 .o_thread_window .o_mail_thread,
-.o_thread_composer .o_composer {
+.o_thread_composer .o_composer,
+.o_Chatter,
+.o_Chatter_scrollPanel .o_ThreadView,
+.o_MessageList,
+.o_Message, 
+.o_Attachment.o-has-card-details{
     background-color: #222222;
     color: #bfbfbf;
 }
@@ -186,7 +191,7 @@ iew_controller{
 
 .o_content,
 .o_mail_thread .o_thread_date_separator .o_thread_date,
-.o_thread_window .o_mail_thread .o_thread_date_separator .o_thread_date {
+.o_thread_window .o_mail_thread .o_thread_date_separator .o_thread_date , .o_MessageList_separatorLabel{
     background-color: #222222;
     color: #bfbfbf;
 }
@@ -256,6 +261,11 @@ iew_controller{
 .o_thread_window .o_out_of_office {
     background-color: #0e1f25;
     color: #92b0b9;
+}
+
+.o_Message.o-not-discussion{
+    background-color: rgb(66, 66, 66);
+    border-bottom: 0px solid #cfd5db;
 }
 
 /* Control Panel */
@@ -408,7 +418,7 @@ iew_controller{
 }
 
 .o_form_view .o_form_sheet_bg > .o_form_sheet{
-    box-shadow: 0 5px 20px -15px white important;
+    box-shadow: 0 5px 20px -15px white !important;
 }
 
 .o_input {
@@ -892,4 +902,70 @@ svg
 
 .o_in_studio header{
     background-color: #262C34;
+}
+
+/* Tags */
+.o_kanban_view .oe_kanban_card .o_field_many2manytags .o_tag, .o_kanban_view .oe_kanban_card .o_kanban_tags .o_tag, .o_kanban_view .o_kanban_record .o_field_many2manytags .o_tag, .o_kanban_view .o_kanban_record .o_kanban_tags .o_tag{
+    border: none;
+}
+
+
+.o_field_widget.o_field_many2manytags .o_tag_color_10, .o_field_widget.o_field_many2manytags .o_tag_color_10::after {
+    background-color: #135336;
+    border: 1px solid #30C381;
+    color: #30C381;
+}
+
+.o_field_widget.o_field_many2manytags .o_tag_color_1, .o_field_widget.o_field_many2manytags .o_tag_color_1::after {
+    background-color: #6a2821;
+    border: 1px solid #F06050;
+    color: #F06050;
+}
+
+.o_field_widget.o_field_many2manytags .o_tag_color_11, .o_field_widget.o_field_many2manytags .o_tag_color_11::after {
+    background-color: #362444;
+    border: 1px solid #9365B8;
+    color: #9365B8;
+}
+
+.o_field_widget.o_field_many2manytags .o_tag_color_4, .o_field_widget.o_field_many2manytags .o_tag_color_4::after {
+    background-color: #294c5e;
+    border: 1px solid #6CC1ED;
+    color: #6CC1ED;
+}
+
+.o_field_widget.o_field_many2manytags .o_tag_color_2, .o_field_widget.o_field_many2manytags .o_tag_color_2::after {
+    background-color: #593b21;
+    border: 1px solid #F4A460;
+    color: #F4A460;
+}
+
+.o_field_widget.o_field_many2manytags .o_tag_color_8, .o_field_widget.o_field_many2manytags .o_tag_color_8::after {
+    background-color: #0f121a;
+    border: 1px solid #475577;
+    color: #475577;
+}
+
+.o_field_widget.o_field_many2manytags .o_tag_color_3, .o_field_widget.o_field_many2manytags .o_tag_color_3::after {
+    background-color: #75610d;
+    border: 1px solid #F7CD1F;
+    color: #F7CD1F;
+}
+
+.o_field_widget.o_field_many2manytags .o_tag_color_0 {
+    background-color: #777777;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+.o_field_widget.o_field_many2manytags .o_tag_color_7, .o_field_widget.o_field_many2manytags .o_tag_color_7::after {
+    background-color: #0f2e35;
+    border: 1px solid #2C8397;
+    color: #2C8397;
+}
+
+.o_field_widget.o_field_many2manytags .o_tag_color_9, .o_field_widget.o_field_many2manytags .o_tag_color_9::after {
+    background-color: #510623;
+    border: 1px solid #D6145F;
+    color: #D6145F;
 }
