@@ -2,7 +2,7 @@
 // @name         Dark theme for Odoo
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/doo.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      1.2.2
+// @version      1.2.3
 // @description  Make all odoo.com domains dark (local version too)
 // @author       Maurin3
 // @match        https://www.*.odoo.com/web*
@@ -28,6 +28,10 @@
     var defaults = { 'dark': false };
     let data = {};
     var css = false;
+    // NOTE: run python to get elements available locally
+    // CMD (python2) : python -m SimpleHTTPServer
+    // CMD (python3) : python3 -m http.server
+    const isDebug = false;
 
     function setStyle(element) {
         element.style.height = '46px';
@@ -141,7 +145,13 @@
     }
 
     async function retrieveCss() {
-        var root = "https://raw.githubusercontent.com/Maurin3/Userscripts/master/css/"
+        var root = "";
+        if (isDebug){
+            root = "http://localhost:8000/css/";
+        }
+        else{
+            root = "https://raw.githubusercontent.com/Maurin3/Userscripts/master/css/"
+        }
         console.info(`Fetching ${root}doo.css`);
         await GM.xmlHttpRequest({
             method: "GET",

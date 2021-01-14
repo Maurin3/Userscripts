@@ -13,7 +13,7 @@ Some useful userscripts :smirk:
 
 | Userscript                     | Install            | Version                                                                            |
 |--------------------------------|:------------------:|:----------------------------------------------------------------------------------:|
-| Dark Odoo                      | [install][doo-raw] | ![alt text](https://img.shields.io/badge/Version-1.2.2-C4246A.svg "Version 1.2.2") |
+| Dark Odoo                      | [install][doo-raw] | ![alt text](https://img.shields.io/badge/Version-1.2.3-C4246A.svg "Version 1.2.3") |
 | Odoo Admin Auto Connect        | [install][aac-raw] | ![alt text](https://img.shields.io/badge/Version-1.1.2-C4246A.svg "Version 1.1.2") |
 | Odoo Quick Connect             | [install][oqc-raw] | ![alt text](https://img.shields.io/badge/Version-1.4.6-C4246A.svg "Version 1.4.6") |
 | Dark Odoo.sh                   | [install][dsh-raw] | ![alt text](https://img.shields.io/badge/Version-1.2.2-C4246A.svg "Version 1.2.2") |
