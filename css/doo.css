@@ -1,4 +1,4 @@
-body{
+body, .o_web_client{
     background-color: #222222;
     color: #bfbfbf;
 }
@@ -173,9 +173,52 @@ iew_controller{
 .o_Chatter_scrollPanel .o_ThreadView,
 .o_MessageList,
 .o_Message, 
-.o_Attachment.o-has-card-details{
+.o_Attachment.o-has-card-details,
+.o_Composer{
     background-color: #222222;
     color: #bfbfbf;
+}
+
+.o_ChatterTopbar_actions .fa{
+    color: #008784;
+}
+
+.o_ChatterTopbar_button.o-active{
+    color: #222222;
+    background-color: #875A7B;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.o_ChatterTopbar_button:hover {
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+.o_ComposerTextInput_textarea::placeholder{
+    color: #222222;
+}
+
+.o_Composer_button .fa,
+.o_Composer_button.fa{
+    color: #0d0d0d;
+}
+
+.o_form_view .o_notebook > .tab-content > .tab-pane > :first-child.oe_form_field_html .note-toolbar.panel-heading,
+.o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading,
+.o_field_widget.oe_form_field_html.oe_form_field_html .popover-body{
+    background-color: #424242;
+}
+
+.o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .btn-secondary,
+.o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading .o_radio_hide_bullet label,
+.o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .note-toolbar.panel-heading label,
+.o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .btn-secondary,
+.o_field_widget.oe_form_field_html.oe_form_field_html .popover-body .o_radio_hide_bullet label,
+.o_radio_hide_bullet .o_field_widget.oe_form_field_html.oe_form_field_html .popover-body label{
+    color: #bfbfbf;
+}
+
+.note-toolbar button:not(:disabled):focus .fa, .note-toolbar button:not(:disabled):hover .fa{
+    color: #00A09D !important;
 }
 
 .o_mail_thread .o_thread_message .o_thread_message_core .o_mail_info strong {
@@ -377,6 +420,16 @@ iew_controller{
     color: #bfbfbf !important;
 }
 
+.o_web_client .o_view_grid tfoot td > .o_grid_total_bar > .o_grid_total_title,
+.o_web_client .o_view_grid .o_grid_total td > .o_grid_total_bar > .o_grid_total_title{
+    background-color: #222222 !important;
+    color: #bfbfbf !important;
+}
+
+.table{
+    color: #bfbfbf !important;
+}
+
 .o_list_view thead{
     background-color: #222222 !important;
     color: #bfbfbf !important;
@@ -534,6 +587,18 @@ color: #FFFFFF;
 .o_form_view .oe_button_box .btn.oe_stat_button:hover,
 .o_form_view .oe_button_box .btn.oe_stat_button:focus {
     background-color: rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+}
+
+.o_statusbar_buttons .btn.btn-primary .fa {
+    color: #222222;
+}
+
+.o_statusbar_buttons .btn.btn-secondary .fa {
+    color: #008784;
+}
+
+.o_statusbar_buttons .btn.btn-secondary:hover .fa {
     color: #FFFFFF;
 }
 
@@ -889,6 +954,17 @@ svg
 
 .o_media_object.rounded-circle.o_employee_redirect{
     background-color: #222222;
+}
+
+.timesheet-timer{
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #cccccc;
+}
+
+.o_web_client .o_view_grid tfoot, .o_web_client .o_view_grid .o_grid_total{
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #cccccc;
+    color: #bfbfbf;
 }
 
 /* Studio */
