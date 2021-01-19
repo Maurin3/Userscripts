@@ -58,6 +58,11 @@ a.text-800:hover {
     color: #21313a;
 }
 
+/* Header Project Page */
+.dropdown-item:hover, .dropdown-menu a:hover, .dropdown-item:focus, .dropdown-menu a:focus{
+    background-color: #424242 !important;
+}
+
 /* Project/Branch History Page */
 .o_branch_history, .o_branch_history .o_tracking_date_separator .o_tracking_date {
     background-color: #222222;
@@ -90,8 +95,10 @@ a.bg-100:hover, a.bg-100:focus, button.bg-100:hover, button.bg-100:focus {
     background-color: rgba(255,255,255,0.7) !important;
     color: #212529 !important;
 }
-.dropdown-menu, .dropdown-menu a{
+.dropdown-menu{
     background-color: #222222 !important;
+}
+.dropdown-menu a {
     color: #FFFFFF !important;
 }
 .o_branch_buttons{
@@ -101,10 +108,13 @@ a.bg-100:hover, a.bg-100:focus, button.bg-100:hover, button.bg-100:focus {
     background-color: #383838 !important;
     color: #FFFFFF !important;
 }
-.js_copy_command {
-    background-color: #222222 !important;
-    color: #FFFFFF !important;
-    box-shadow: none !important
+.gi-clippy:before {
+    content: "\e934";
+    color: #212529;
+}
+.o_git_command:hover .gi-clippy:before{
+    content: "\e934";
+    color: #FFFFFF;
 }
 
 /* General Settings Page */
@@ -149,6 +159,33 @@ a.bg-100:hover, a.bg-100:focus, button.bg-100:hover, button.bg-100:focus {
     color: #f8d7da;
     background-color: #240f0f;
 }
+.odoo_sh .help-block{
+    color: #9eb0ce;
+}
+.custom-select{
+    background-color: #2f2f2f;
+    border: 1px solid #ced4da;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    color: #a9b8c7;
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
+}
+.custom-select > option{
+    background-color: #222222;
+}
+.odoo_sh .text-muted{
+    color: #a0aeb9 !important;
+}
+
+/* Branch Monitoring Page */
+.alert-secondary {
+    color: #d1dee4;
+    background-color: #2f4752;
+    border-color: #d1dee4;
+}
+
+img.ml-auto, img.mx-auto{
+    border-radius: 75px;
+}
 
 /* Branch Settings Page */
 .o_branch_settings_wrapper .o_settings_pricing .table tr:nth-last-child(n + 1) td, .o_settings_wrapper .o_settings_pricing .table tr:nth-last-child(n + 1) td, .list-group-item, .o_settings_wrapper .o_github_search_box .form-control  {
@@ -171,6 +208,7 @@ a.bg-100:hover, a.bg-100:focus, button.bg-100:hover, button.bg-100:focus {
 .btn-light {
     background-color: #383838;
     color: #FFFFFF;
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.15), 0 1px 1px rgba(255, 255, 255, 0.075);
 }
 .btn-light:hover {
     background-color: #222222 !important;
@@ -310,12 +348,22 @@ body,
     background-color: #222222 !important;
     color: #dfdfdf !important;
 }
-
 .modal .btn-secondary{
     background-color: #222222 !important;
     color: #dfdfdf !important;
 }
-
 pre{
     color: #FFFFFF !important;
+}
+body .modal.o_technical_modal .form-control{
+    border: 1px solid #d4d5d7;
+    color: #adadad;
+    background-color: #424242;
+}
+.o_sh_connect_as_search{
+    padding-bottom: 10px;
+}
+.close{
+    color: #ffffff;
+    text-shadow: 0 1px 0 #000000;
 }
