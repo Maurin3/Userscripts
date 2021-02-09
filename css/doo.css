@@ -792,7 +792,8 @@ svg
 }
 
 .o_base_settings .o_control_panel .o_panel .o_setting_search .searchInput {
-    background-color: #0d0d0d;
+    background-color: inherit;
+    color: #DFDFDF;
 }
 
 .o_web_settings_dashboard {
