@@ -805,6 +805,14 @@ svg
     background-color: rgba(0, 0, 0, 0.25);
 }
 
+.o_base_settings .o_setting_container .settings .settingSearchHeader{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.o_base_settings .o_setting_container .settings .settingSearchHeader .appName{
+    color: #DFDFDF;
+}
+
 /* Calendar view */
 .fc-unthemed tbody {
     background-color: #222222;
