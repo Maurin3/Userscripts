@@ -813,6 +813,10 @@ svg
     color: #DFDFDF;
 }
 
+.o_base_settings .o_setting_container .settings .highlighter{
+    background-color: #5c5e00;
+}
+
 /* Calendar view */
 .fc-unthemed tbody {
     background-color: #222222;
