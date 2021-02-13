@@ -828,10 +828,10 @@ svg
 
 .o_calendar_container .o_calendar_view .o_calendar_widget .fc-week-number,
 .o_calendar_container .o_calendar_view .o_calendar_widget .fc-widget-header {
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: #222222;
 }
 
-.o_calendar_container .o_calendar_sidebar_container .o_calendar_sidebar {
+.o_calendar_container .o_calendar_sidebar_container .o_calendar_sidebar, .o_calendar_sidebar_container {
     background-color: #222222;
 }
 
@@ -867,8 +867,13 @@ svg
 }
 
 .o_calendar_container .o_calendar_sidebar_container .ui-datepicker table td a {
-    background-color: #222222;
+    background-color: #000000;
     border-color: #bfbfbf;
+    color: #bfbfbf;
+}
+
+.o_calendar_sidebar_container .ui-datepicker td a, .o_calendar_sidebar_container .ui-datepicker td span{
+    color: #b5b5b5;
 }
 
 .o_calendar_container .o_calendar_sidebar_container .ui-datepicker table .o_selected_range.o_color {
@@ -1061,4 +1066,32 @@ svg
     background-color: #510623;
     border: 1px solid #D6145F;
     color: #D6145F;
+}
+
+/* Tooltips */
+.tooltip .tooltip-inner{
+    background-color: rgb(0, 0, 0);
+    color: #afafaf;
+    box-shadow: 0px 0px 1px 1px #797979;
+    border-color: #afafaf;
+}
+
+.tooltip .tooltip-inner .oe_tooltip_string{
+    background-color: #2f2f2f;
+}
+
+.tooltip.bs-tooltip-top .arrow::after, .tooltip.bs-tooltip-auto[x-placement^="top"] .arrow::after{
+    border-top-color: transparent;
+}
+
+.tooltip.bs-tooltip-right .arrow::after, .tooltip.bs-tooltip-auto[x-placement^="right"] .arrow::after{
+    border-right-color: transparent;
+}
+
+.tooltip.bs-tooltip-right .arrow::after, .tooltip.bs-tooltip-auto[x-placement^="left"] .arrow::after{
+    border-left-color: transparent;
+}
+
+.tooltip.bs-tooltip-right .arrow::after, .tooltip.bs-tooltip-auto[x-placement^="bottom"] .arrow::after{
+    border-bottom-color: transparent;
 }
