@@ -416,6 +416,14 @@ iew_controller{
     color: #FFFFFF;
 }
 
+.o_Message .o_Message_partnerImStatusIcon .o_PartnerImStatusIcon_outerBackground{
+    color: #222222 !important;
+}
+
+.o_Message.o-not-discussion .o_Message_partnerImStatusIcon .o_PartnerImStatusIcon_outerBackground{
+    color: #424242 !important;
+}
+
 /* List view */
 .o_list_view,
 .o_list_view tfoot,
