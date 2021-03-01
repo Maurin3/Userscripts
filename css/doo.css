@@ -232,7 +232,6 @@ iew_controller{
     color: #bfbfbf;
 }
 
-.o_content,
 .o_mail_thread .o_thread_date_separator .o_thread_date,
 .o_thread_window .o_mail_thread .o_thread_date_separator .o_thread_date , .o_MessageList_separatorLabel{
     background-color: #222222;
@@ -416,12 +415,22 @@ iew_controller{
     color: #FFFFFF;
 }
 
-.o_Message .o_Message_partnerImStatusIcon .o_PartnerImStatusIcon_outerBackground{
+.o_Message .o_Message_partnerImStatusIcon .o_PartnerImStatusIcon_outerBackground,
+.o_Message .o_Message_partnerImStatusIcon .o_PartnerImStatusIcon_innerBackground{
     color: #222222 !important;
 }
 
-.o_Message.o-not-discussion .o_Message_partnerImStatusIcon .o_PartnerImStatusIcon_outerBackground{
+.o_Message.o-not-discussion .o_Message_partnerImStatusIcon .o_PartnerImStatusIcon_outerBackground,
+.o_Message.o-not-discussion .o_Message_partnerImStatusIcon .o_PartnerImStatusIcon_innerBackground{
     color: #424242 !important;
+}
+
+.o_PartnerImStatusIcon_icon.o-offline{
+    color: #acbccc;
+}
+
+.o_Message_prettyBody pre {
+    color: #DFDFDF !important;
 }
 
 /* List view */
@@ -746,14 +755,14 @@ color: #FFFFFF;
 }
 
 .o_kanban_view.o_kanban_ungrouped .o_kanban_record {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background-color: #1A1A1A !important;
     border-bottom: 1px solid #bfbfbf;
 }
 
 .o_kanban_view .o_kanban_record,
 .o_kanban_view .o_kanban_quick_create,
 .o_kanban_view .o_kanban_group.o_column_folded {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: #1A1A1A;
 }
 
 .o_kanban_view .o_kanban_record .o_kanban_record_title,
@@ -763,6 +772,10 @@ color: #FFFFFF;
 .o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_primary_left .o_primary > span:first-child,
 .o_kanban_view.o_kanban_dashboard .o_kanban_record .o_kanban_card_header_title .o_primary{
     color: #FFFFFF;
+}
+
+.o_kanban_card_header * {
+    color: #DFDFDF;
 }
 
 /* Accounting Dashboard */
