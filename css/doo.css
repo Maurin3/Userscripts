@@ -1089,6 +1089,12 @@ svg
     color: #D6145F;
 }
 
+.o_field_widget.o_field_many2manytags .o_tag_color_6, .o_field_widget.o_field_many2manytags .o_tag_color_6::after {
+    background-color: #713b3b;
+    color: #EB7E7F;
+    border: 1px solid #EB7E7F;
+}
+
 /* Tooltips */
 .tooltip .tooltip-inner{
     background-color: rgb(0, 0, 0);
