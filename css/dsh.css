@@ -78,8 +78,15 @@ a.text-800:hover {
 .o_tracking_commits > .o_tracking_commit {
     background-color: #444444 !important;
 }
-.o_branch_history .o_sh_tracking_icon .gi {
+.o_branch_history .o_sh_tracking_icon .gi,
+.o_branch_history .o_sh_tracking_icon .fa-stack{
     background-color: #222222 !important;
+}
+.fa-inverse{
+    color: #222222;
+}
+.o_branch_history .o_tracking:hover .o_sh_tracking_icon .gi{
+    color: inherit !important;
 }
 .list-group-item:not([class*='list-group-item-']):not(.active) {
     color: #FFFFFF !important;
