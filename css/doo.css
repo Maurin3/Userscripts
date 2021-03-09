@@ -442,8 +442,9 @@ iew_controller{
 }
 
 .o_web_client .o_view_grid tfoot td > .o_grid_total_bar > .o_grid_total_title,
-.o_web_client .o_view_grid .o_grid_total td > .o_grid_total_bar > .o_grid_total_title{
-    background-color: #222222 !important;
+.o_web_client .o_view_grid .o_grid_total td > .o_grid_total_bar > .o_grid_total_title,
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_consolidated_pill_title{
+    background-color: transparent !important;
     color: #bfbfbf !important;
 }
 
