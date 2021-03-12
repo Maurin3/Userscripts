@@ -750,6 +750,84 @@ color: #FFFFFF;
     color: #222222;
 }
 
+.o_gantt_view .o_gantt_row_container .o_gantt_row{
+    background-color: #222222;
+}
+
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_cell.o_gantt_today{
+    background-color: #222222;
+}
+
+.o_gantt_view .o_gantt_row_sidebar,
+.o_gantt_view .o_gantt_header_container .o_gantt_header_cell{
+    color: #DFDFDF;
+}
+
+.o_gantt_view .o_gantt_header_container .o_gantt_header_cell.o_gantt_today,
+.o_gantt_view .o_gantt_row_container .o_gantt_cell.o_gantt_today,
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_cell.o_gantt_today{
+    border-left-color: rgba(0, 160, 157, 0.90);
+    background-color: rgba(0, 160, 157, 0.90) !important;
+    color: #222222;
+}
+
+.o_gantt_view .o_gantt_header_container .o_gantt_header_cell.o_gantt_today + .o_gantt_header_cell,
+.o_gantt_view .o_gantt_header_container .o_gantt_header_cell.o_gantt_today + .o_gantt_cell,
+.o_gantt_view .o_gantt_row_container .o_gantt_cell.o_gantt_today + .o_gantt_header_cell,
+.o_gantt_view .o_gantt_row_container .o_gantt_cell.o_gantt_today + .o_gantt_cell,
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_cell.o_gantt_today + .o_gantt_header_cell,
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_cell.o_gantt_today + .o_gantt_cell{
+    border-left-color: rgba(0, 160, 157, 0.90);
+}
+
+.o_gantt_view .o_gantt_total_row_container .o_gantt_row .o_gantt_pill{
+    background-color: #875a7b;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell{
+    background-color: #222222 !important;
+}
+
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell_buttons .o_gantt_cell_add,
+.o_gantt_view .o_gantt_row_nogroup .o_gantt_cell_buttons .o_gantt_cell_plan{
+    background-color: #4A4A4A;
+}
+
+.popover-header{
+    color: #FFFFFF;
+    background-color: #222222;
+    border-bottom: 1px solid #222222;
+}
+
+.popover{
+    background-color: #4A4A4A;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.popover-body{
+    color: #bfbfbf;
+}
+
+.bs-popover-top > .arrow::after,
+.bs-popover-auto[x-placement^="top"] > .arrow::after{
+    border-top-color: #4A4A4A;
+}
+
+.bs-popover-top > .arrow::after,
+.bs-popover-auto[x-placement^="right"] > .arrow::after{
+    border-right-color: #4A4A4A;
+}
+
+.bs-popover-top > .arrow::after,
+.bs-popover-auto[x-placement^="bottom"] > .arrow::after{
+    border-bottom-color: #4A4A4A;
+}
+
+.bs-popover-top > .arrow::after,
+.bs-popover-auto[x-placement^="left"] > .arrow::after{
+    border-left-color: #4A4A4A;
+}
+
 /* Kanban view */
 .o_kanban_view.o_kanban_grouped {
     background-color: #222222;
@@ -1122,4 +1200,18 @@ svg
 
 .tooltip.bs-tooltip-right .arrow::after, .tooltip.bs-tooltip-auto[x-placement^="bottom"] .arrow::after{
     border-bottom-color: transparent;
+}
+
+/* VOIP */
+.o_dial,
+.o_dial .o_dial_main_buttons{
+    background-color: #222222;
+}
+
+.o_dial .o_dial_searchbar input, .o_dial .o_dial_keypad_input_div input{
+    background-color: #444444;
+}
+
+.o_dial .o_dial_searchbar input::placeholder{
+    color: #DFDFDF;
 }
