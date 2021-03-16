@@ -828,6 +828,22 @@ color: #FFFFFF;
     border-left-color: #4A4A4A;
 }
 
+.o_gantt_view .o_gantt_row_group:hover .o_gantt_row_sidebar,
+.o_gantt_view .o_gantt_row_group:hover .o_gantt_slots_container,
+.o_gantt_view .o_gantt_row_group.open .o_gantt_row_sidebar,
+.o_gantt_view .o_gantt_row_group.open .o_gantt_slots_container{
+    background-color: #4A4A4A;
+    background-image: none;
+}
+
+.o_gantt_view .o_gantt_row_group .o_gantt_row_sidebar,
+.o_gantt_view .o_gantt_row_group .o_gantt_slots_container,
+.o_gantt_view .o_gantt_row_group.open:hover .o_gantt_row_sidebar,
+.o_gantt_view .o_gantt_row_group.open:hover .o_gantt_slots_container{
+    background-image: none;
+    background-color: #333333;
+}
+
 /* Kanban view */
 .o_kanban_view.o_kanban_grouped {
     background-color: #222222;
