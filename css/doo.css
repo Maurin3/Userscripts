@@ -480,6 +480,15 @@ iew_controller{
     border-bottom: 1px solid #dee2e6;
 }
 
+.o_list_view .o_list_table.o_list_table_grouped > tbody > tr.o_group_header{
+    background-color: #4A4A4A;
+}
+
+.o_list_view .o_list_table.o_list_table_grouped > tbody > tr.o_group_header.o_group_has_content,
+.o_list_view .o_list_table.o_list_table_grouped > tbody > tr.o_group_header.o_group_has_content.o_group_open{
+    color: #bfbfbf;
+}
+
 /* Form view */
 .o_form_view, 
 .o_form_sheet_bg,
