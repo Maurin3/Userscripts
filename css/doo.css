@@ -737,6 +737,10 @@ color: #FFFFFF;
     background-color: initial;
 }
 
+.note-editor .note-editing-area .note-editable{
+    color: #000000 !important;
+}
+
 /* .note-fontsize.btn-group > div > div */
 /* .note-fore-color-preview.mx-1 > ul */
 /* Grid view */
