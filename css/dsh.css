@@ -374,3 +374,44 @@ body .modal.o_technical_modal .form-control{
     color: #ffffff;
     text-shadow: 0 1px 0 #000000;
 }
+
+/* Monitoring */
+.view-mode--kiosk .navbar,
+.view-mode--tv .navbar,
+body{
+    background-color: #222222;
+    color: #DFDFDF;
+}
+
+.text-800, .btn{
+    background-color: #424242;
+}
+
+.dashboard-content{
+    background-color: #222222;
+    color: #DFDFDF;
+    height: unset;
+}
+
+.dashboard-row__title,
+.css-1rtdf8o,
+.css-10oov4z{
+    color: #DFDFDF;
+}
+
+.css-vs8602,
+.css-10oov4z,
+.panel-container{
+    background-color: #424242;
+}
+
+.css-10oov4z .react-calendar__navigation__label,
+.css-10oov4z .react-calendar__navigation__arrow,
+.css-10oov4z .react-calendar__navigation,
+.css-1cuj4ez{
+    color: #DFDFDF;
+}
+
+div.flot-text{
+    color: #DFDFDF !important;
+}
