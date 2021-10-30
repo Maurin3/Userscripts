@@ -69,7 +69,6 @@ a.text-800:hover {
     color: #FFFFFF;
 }
 .o_branch_history .o_tracking .o_tracking_commits .o_tracking_commit .o_tracking_commit_body{
-    background-color: rgba(128, 128, 128, 0.25);
     white-space: break-spaces !important;
 }
 .o_tracking_commit_body > .o_tracking_commit_body {
@@ -99,8 +98,8 @@ a.text-800:hover {
     border-color: #ced4da;
 }
 a.bg-100:hover, a.bg-100:focus, button.bg-100:hover, button.bg-100:focus {
-    background-color: rgba(255,255,255,0.7) !important;
-    color: #212529 !important;
+    background-color: rgba(118,118,118,0.7) !important;
+    color: #f9f9f9 !important;
 }
 .dropdown-menu{
     background-color: #222222 !important;
@@ -335,6 +334,28 @@ body,
 .table-striped > tbody > tr:nth-of-type(odd) {
     background-color: rgba(0, 0, 0, 0.25);
 }
+.paas-worker-message-headers .paas-worker-collapse-title a.collapsed{
+    background-color: #222222 !important;
+}
+.paas-worker-message-headers .paas-worker-collapse-title a i{
+    color: #dfdfdf;
+}
+.nav-tabs .nav-link.active[href="#paas-worker-message-content-html"]{
+    background-color: #222222 !important;
+    color: #dfdfdf;
+    border-color: #222222 #222222 #222222
+}
+.paas-worker-mail .paas-worker-message-display.o_sh_has_message .tab-content{
+    background-color: #222222 !important;
+}
+.tab-content #paas-worker-message-content-html.active{
+    box-shadow: 0 0 10px #000000;
+}
+
+.paas-worker-message-headers .paas-worker-collapse-title a,
+.paas-worker-message-headers .paas-worker-collapse-title a:before{
+    background-color: #222222 !important;
+}
 
 /* Status Page */
 .o_sh_status .o_sh_server_lists_container tbody > tr:first-child td:first-child  {
@@ -373,4 +394,44 @@ body .modal.o_technical_modal .form-control{
 .close{
     color: #ffffff;
     text-shadow: 0 1px 0 #000000;
+}
+
+/* Graphana */
+.css-vs8602{
+    border: 1px solid rgb(60, 60, 60);
+    background: rgb(0, 0, 0);
+    box-shadow: rgb(0 0 0) 0px 0px 20px;
+}
+
+.css-1rtdf8o,
+.css-1ieymqs-Label{
+    color: rgb(146, 146, 146);
+}
+
+.css-gr0614{
+    background: rgb(0, 0, 0);
+}
+
+.css-16j21rp{
+    border: 1px solid rgb(60, 60, 60);
+    background: rgb(0, 0, 0);
+    box-shadow: rgb(0 0 0) 0px 0px 20px;
+}
+
+.css-10oov4z{
+    background: rgb(0, 0, 0);
+}
+
+.css-10oov4z .react-calendar__navigation__label,
+.css-10oov4z .react-calendar__navigation__arrow,
+.css-10oov4z .react-calendar__navigation{
+    color: rgb(146, 146, 146);
+}
+
+.css-1cuj4ez{
+    color: rgb(146, 146, 146);
+}
+
+.css-j5nr4j:hover{
+    background: rgb(49, 49, 49);
 }

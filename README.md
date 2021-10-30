@@ -16,7 +16,7 @@ Some useful userscripts :smirk:
 | Dark Odoo                      | [install][doo-raw] | ![alt text](https://img.shields.io/badge/Version-1.2.4-C4246A.svg "Version 1.2.4") |
 | Odoo Admin Auto Connect        | [install][aac-raw] | ![alt text](https://img.shields.io/badge/Version-1.1.3-C4246A.svg "Version 1.1.3") |
 | Odoo Quick Connect             | [install][oqc-raw] | ![alt text](https://img.shields.io/badge/Version-1.4.7-C4246A.svg "Version 1.4.7") |
-| Dark Odoo.sh                   | [install][dsh-raw] | ![alt text](https://img.shields.io/badge/Version-1.2.2-C4246A.svg "Version 1.2.2") |
+| Dark Odoo.sh                   | [install][dsh-raw] | ![alt text](https://img.shields.io/badge/Version-1.2.3-C4246A.svg "Version 1.2.3") |
 | Remove ads for Tab for a Cause | [install][tfc-raw] | ![alt text](https://img.shields.io/badge/Version-1.0-C4246A.svg "Version 1.0")     |
 | Hide Archived Repos GitHub     | [install][har-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     |
 | Remove ads for Outlook         | [install][nao-raw] | ![alt text](https://img.shields.io/badge/Version-1.2-C4246A.svg "Version 1.2")     |
