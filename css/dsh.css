@@ -396,6 +396,24 @@ body .modal.o_technical_modal .form-control{
     text-shadow: 0 1px 0 #000000;
 }
 
+.popover{
+    background-color: #222222 !important;
+}
+.popover-header{
+    background-color: #000000;
+    border-bottom: 1px solid #000000;
+}
+.popover-body{
+    background-color: #222222 !important;
+    color: #ffffff;
+}
+.bs-popover-bottom > .arrow::after,
+.bs-popover-auto[x-placement^="bottom"] > .arrow::after,
+.bs-popover-bottom .popover-header::before, 
+.bs-popover-auto[x-placement^="bottom"] .popover-header::before{
+    border-bottom-color: #000000;
+}
+
 /* Graphana */
 .css-vs8602{
     border: 1px solid rgb(60, 60, 60);
