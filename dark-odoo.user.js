@@ -2,7 +2,7 @@
 // @name         Dark theme for Odoo
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/doo.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      1.2.4
+// @version      1.2.5
 // @description  Make all odoo.com domains dark (local version too)
 // @author       Maurin3
 // @match        https://www.*.odoo.com/web*
@@ -72,8 +72,6 @@
         await retrieveCss();
         let darkMode = document.getElementsByClassName('o_dark_mode');
         if (darkMode.length == 0) {
-            let darkMode = document.createElement('li');
-            darkMode.classList.add('o_dark_mode');
             let clickable = document.createElement('span');
             setStyle(clickable);
             await getData();
@@ -87,7 +85,14 @@
                 let debugMenu = document.getElementsByClassName('o_menu_systray');
                 if (debugMenu.length > 0) {
                     // It exists now
+                    let darkMode = false;
                     let elemMenu = document.getElementsByClassName('o_user_menu');
+                    if (elemMenu[0].nodeName && elemMenu[0].nodeName == "DIV"){
+                        darkMode = document.createElement('div');
+                    }else{
+                        darkMode = document.createElement('li');
+                    }
+                    darkMode.classList.add('o_dark_mode');
                     darkMode.appendChild(clickable);
                     debugMenu[0].insertBefore(darkMode, elemMenu[0]);
                     observer.disconnect();
