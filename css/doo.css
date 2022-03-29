@@ -56,6 +56,12 @@ a:hover{
     color: #FFFFFF;
 }
 
+.btn-light{
+    background-color: #222222;
+    border-color: #222222;
+    color: #FFFFFF;
+}
+
 .fa{
     color: #bfbfbf;
 }
@@ -142,6 +148,11 @@ iew_controller{
 .o_notification_manager .o_notification .o_close,
 .o_notification_manager .o_notification .o_icon{
     color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.text-muted,
+.o_ma_text_error{
+    color: rgba(184, 184, 184, 0.76) !important;
 }
 
 /* Modals */
@@ -318,6 +329,14 @@ iew_controller{
     border: 1px solid #222222;
 }
 
+.o_Message.o-not-discussion.o_Message_active{
+    background-color: #4a4a4a;
+}
+
+.o_Message.o_Message_active{
+    background-color: #3a3a3a;
+}
+
 /* Control Panel */
 .o_control_panel{
     background-color: #222222;
@@ -338,14 +357,26 @@ iew_controller{
 
 .o_control_panel .btn-secondary,
 .o_control_panel .btn-secondary.disabled,
-.o_control_panel .btn-secondary.disabled:hover{
+.o_control_panel .btn-secondary.disabled:hover,
+.o_control_panel .btn-light,
+.o_control_panel .btn-light.disabled,
+.o_control_panel .btn-light.disabled:hover{
     background-color: transparent;
     border-color: #222222;
 }
 
 .o_control_panel .btn-secondary:hover,
 .o_control_panel .btn-secondary:active,
-.o_control_panel .btn-secondary:not(:disabled):not(.disabled):active{
+.o_control_panel .btn-secondary:not(:disabled):not(.disabled):active,
+.o_control_panel .btn-light:hover,
+.o_control_panel .btn-light:active,
+.o_control_panel .btn-light:not(:disabled):not(.disabled):active{
+    background-color: #222222;
+    border-color: #222222;
+    color: #FFFFFF;
+}
+
+.dropdown.show .dropdown-toggle.btn-light, .dropdown.show .o_form_view .o_statusbar_status .dropdown-toggle.o_arrow_button:not(.disabled), .o_form_view .o_statusbar_status .dropdown.show .dropdown-toggle.o_arrow_button:not(.disabled), .dropdown.show .dropdown-toggle.btn-light:hover, .dropdown.show .dropdown-toggle.btn-light:focus, .dropdown .dropdown-toggle.o_dropdown_active.btn-light, .dropdown .o_form_view .o_statusbar_status .o_dropdown_active.o_arrow_button:not(.disabled), .o_form_view .o_statusbar_status .dropdown .o_dropdown_active.o_arrow_button:not(.disabled), .dropdown .dropdown-toggle.o_dropdown_active.btn-light:hover, .dropdown .dropdown-toggle.o_dropdown_active.btn-light:focus{
     background-color: #222222;
     border-color: #222222;
     color: #FFFFFF;
@@ -357,6 +388,10 @@ iew_controller{
 .o_dropdown_menu .o_menu_item > .dropdown-item{
     background-color: #222222;
     color: #bfbfbf;
+}
+
+.breadcrumb-item.active span{
+    color: #bfbfbf !important;
 }
 
 .dropdown-item:active,
@@ -515,6 +550,10 @@ iew_controller{
 .o_form_view .o_form_sheet_bg > .o_form_sheet,
 .o_form_view .o_form_sheet_bg{
     background-color: #222222;
+    color: #bfbfbf;
+}
+
+.o_form_view .o_form_label{
     color: #bfbfbf;
 }
 
@@ -710,9 +749,13 @@ color: #FFFFFF;
     color: #000000;
 }
 
-.note-editor .note-color .dropdown-menu {
+/* .note-editor .note-color .dropdown-menu {
     background-color: #ffffff !important;
     color: #000000;
+} */
+
+.note-editable{
+    background-color: #222222;
 }
 
 .oe_form_field_html h1,
@@ -1254,6 +1297,9 @@ svg
 .o_field_widget.o_field_many2manytags .o_tag_color_0 {
     background-color: #777777;
     color: #FFFFFF;
+}
+
+div:not(.o_clickable_m2x_avatar) > .o_field_widget.o_field_many2manytags .o_tag_color_0 {
     border: 1px solid #FFFFFF;
 }
 
