@@ -13,7 +13,6 @@ Some useful userscripts :smirk:
 
 | Userscript                     | Install            | Version                                                                            |
 |--------------------------------|:------------------:|:----------------------------------------------------------------------------------:|
-| Dark Odoo                      | [install][doo-raw] | ![alt text](https://img.shields.io/badge/Version-1.2.5-C4246A.svg "Version 1.2.5") |
 | Odoo Admin Auto Connect        | [install][aac-raw] | ![alt text](https://img.shields.io/badge/Version-1.1.3-C4246A.svg "Version 1.1.3") |
 | Odoo Quick Connect             | [install][oqc-raw] | ![alt text](https://img.shields.io/badge/Version-1.4.7-C4246A.svg "Version 1.4.7") |
 | Dark Odoo.sh                   | [install][dsh-raw] | ![alt text](https://img.shields.io/badge/Version-1.2.3-C4246A.svg "Version 1.2.3") |
@@ -21,7 +20,6 @@ Some useful userscripts :smirk:
 | Hide Archived Repos GitHub     | [install][har-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     |
 | Remove ads for Outlook         | [install][nao-raw] | ![alt text](https://img.shields.io/badge/Version-1.2-C4246A.svg "Version 1.2")     |
 
-[doo-raw]: https://github.com/Maurin3/Userscripts/raw/master/dark-odoo.user.js
 [aac-raw]: https://github.com/Maurin3/Userscripts/raw/master/odoo-admin-auto-connect.user.js
 [oqc-raw]: https://github.com/Maurin3/Userscripts/raw/master/odoo-quick-connect.user.js
 [dsh-raw]: https://github.com/Maurin3/Userscripts/raw/master/dark-odoo-sh.user.js
