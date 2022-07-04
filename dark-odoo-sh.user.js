@@ -2,12 +2,13 @@
 // @name         Dark theme for odoo.sh
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/dsh.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      1.2.3
+// @version      1.2.4
 // @description  Make odoo.sh dark
 // @author       Maurin3
 // @match        https://www.odoo.sh/*
 // @include      /^https://eupp[0-9]*.odoo\.com/paas/*
 // @include      /^https://eupd[0-9]*.odoo\.com/paas/*
+// @include      /^https://eupv[0-9]*.odoo\.com/paas/*
 // @run-at       document-start
 // @grant        GM.getValue
 // @grant        GM_getValue
