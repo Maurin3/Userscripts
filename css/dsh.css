@@ -123,6 +123,11 @@ a.bg-100:hover, a.bg-100:focus, button.bg-100:hover, button.bg-100:focus {
     color: #FFFFFF;
 }
 
+/* Upgrade mode */
+.timeline ul.checkout-bar li.active{
+    color: #05ffe8;
+}
+
 /* General Settings Page */
 .help-block {
     background-color: #222222;
