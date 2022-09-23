@@ -15,14 +15,12 @@ Some useful userscripts :smirk:
 |--------------------------------|:------------------:|:----------------------------------------------------------------------------------:|
 | Odoo Admin Auto Connect        | [install][aac-raw] | ![alt text](https://img.shields.io/badge/Version-1.1.3-C4246A.svg "Version 1.1.3") |
 | Odoo Quick Connect             | [install][oqc-raw] | ![alt text](https://img.shields.io/badge/Version-2.0.1-C4246A.svg "Version 2.0.1") |
-| Dark Odoo.sh                   | [install][dsh-raw] | ![alt text](https://img.shields.io/badge/Version-1.2.4-C4246A.svg "Version 1.2.4") |
 | Remove ads for Tab for a Cause | [install][tfc-raw] | ![alt text](https://img.shields.io/badge/Version-1.0-C4246A.svg "Version 1.0")     |
 | Hide Archived Repos GitHub     | [install][har-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     |
 | Remove ads for Outlook         | [install][nao-raw] | ![alt text](https://img.shields.io/badge/Version-1.2-C4246A.svg "Version 1.2")     |
 
 [aac-raw]: https://github.com/Maurin3/Userscripts/raw/master/odoo-admin-auto-connect.user.js
 [oqc-raw]: https://github.com/Maurin3/Userscripts/raw/master/odoo-quick-connect.user.js
-[dsh-raw]: https://github.com/Maurin3/Userscripts/raw/master/dark-odoo-sh.user.js
 [tfc-raw]: https://github.com/Maurin3/Userscripts/raw/master/no-ads-tab-for-a-cause.user.js
 [har-raw]: https://github.com/Maurin3/Userscripts/raw/master/hide-archive-repo-github.user.js
 [nao-raw]: https://github.com/Maurin3/Userscripts/raw/master/no-ads-outlook.user.js
