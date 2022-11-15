@@ -2,7 +2,7 @@
 // @name         Odoo Quick Connect
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/oqc.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      2.0.2
+// @version      2.1.0
 // @description  Select the impersonation in runbots of odoo.com (and local instance)
 // @author       Maurin3
 // @include      /^http(s)?:\/\/[0-9]{5,}\-((saas\-)?[0-9]{2}|master)(\-[0-9]{1})?(\-all)?\.runbot[0-9]{2,}\.odoo\.com(\/)?[a-z]{0,2}(_)?[A-Z]{0,2}\/web\/login(\?debug=)?$/
@@ -70,14 +70,18 @@
         connect('demo');
     }
 
+    let portalConnect = function(event){
+        connect("portal");
+    }
+
     let otherConnect = function(event){
         styleDisplay([loginDiv, passwordDiv, button[0], cancelOtherButton]);
-        classUndisplay([adminInput, demoInput, otherInput]);
+        classUndisplay([adminInput, demoInput, portalInput, otherInput]);
     }
 
     let cancelOther = function(event){
         styleUndisplay([loginDiv, passwordDiv, button[0], cancelOtherButton]);
-        classDisplay([adminInput, demoInput, otherInput]);
+        classDisplay([adminInput, demoInput, portalInput, otherInput]);
     }
 
     let impersonate = document.createElement('div');
@@ -85,6 +89,7 @@
 
     let adminInput = createButton('input', 'Admin', impersonate, adminConnect);
     let demoInput = createButton('input', 'Demo', impersonate, demoConnect);
+    let portalInput = createButton('input', 'Portal', impersonate, portalConnect);
     let otherInput = createButton('input', 'Other', impersonate, otherConnect);
     let cancelOtherButton = createButton('button', 'Cancel', impersonate, cancelOther);
 
@@ -92,22 +97,26 @@
     function createButton(elemType, name, parentElem, action){
         let button = document.createElement(elemType);
         button.setAttribute('type', 'button');
-        if (name === 'Admin' || name === 'Demo' || name === 'Other'){
+        if (name === 'Admin' || name === 'Demo' || name === 'Portal' || name === 'Other'){
             button.classList.add('form-control', 'd-inline', 'btn', 'my-2');
             button.value = name;
         }
         switch(name){
             case 'Admin':
-                button.classList.add('btn-outline-primary');
+                button.classList.add('btn-primary');
                 break;
             case 'Demo':
-                button.classList.add('btn-outline-secondary');
+                button.classList.add('btn-secondary');
+                break;
+            case 'Portal':
+                debugger;
+                button.classList.add('btn-dark');
                 break;
             case 'Other':
-                button.classList.add('btn-outline-info');
+                button.classList.add('btn-info');
                 break;
             default: // cancelOtherButton, name = 'Cancel'
-                button.classList.add('btn', 'btn-outline-secondary', 'w-100');
+                button.classList.add('btn', 'btn-info', 'w-100');
                 button.style.display = 'none';
                 button.innerHTML = name;
         }
