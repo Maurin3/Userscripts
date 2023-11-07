@@ -2,7 +2,7 @@
 // @name         Odoo Quick Connect
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/oqc.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      2.1.0
+// @version      2.1.1
 // @description  Select the impersonation in runbots of odoo.com (and local instance)
 // @author       Maurin3
 // @include      /^http(s)?:\/\/[0-9]{5,}\-((saas\-)?[0-9]{2}|master)(\-[0-9]{1})?(\-all)?\.runbot[0-9]{2,}\.odoo\.com(\/)?[a-z]{0,2}(_)?[A-Z]{0,2}\/web\/login(\?debug=)?$/
@@ -109,7 +109,6 @@
                 button.classList.add('btn-secondary');
                 break;
             case 'Portal':
-                debugger;
                 button.classList.add('btn-dark');
                 break;
             case 'Other':
@@ -125,6 +124,6 @@
         return button;
     }
 
-    let form = document.forms[0];
+    let form = document.getElementsByClassName('oe_login_form')[0];
     form.insertBefore(impersonate, button[0]);
 })();
