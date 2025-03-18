@@ -2,10 +2,10 @@
 // @name         Odoo Quick Connect
 // @icon         http://github.com/Maurin3/Userscripts/blob/master/images/oqc.png?raw=true
 // @namespace    https://github.com/Maurin3
-// @version      2.1.1
+// @version      2.1.2
 // @description  Select the impersonation in runbots of odoo.com (and local instance)
 // @author       Maurin3
-// @include      /^http(s)?:\/\/[0-9]{5,}\-((saas\-)?[0-9]{2}|master)(\-[0-9]{1})?(\-all)?\.runbot[0-9]{2,}\.odoo\.com(\/)?[a-z]{0,2}(_)?[A-Z]{0,2}\/web\/login(\?debug=)?$/
+// @include      /^http(s)?:\/\/[0-9]{5,}\-((saas\-)?[0-9]{2}|master)(\-[0-9]{1})?(\-all|)?(\-design-theme)?\.runbot[0-9]{3,}\.odoo\.com(\/)?[a-z]{0,2}(_)?[A-Z]{0,2}\/web\/login(\?debug=)?/
 // @include      /^http(s)?:\/\/localhost(:)?[0-9]{0,5}(\/)?[a-z]{0,2}(_)?[A-Z]{0,2}\/web\/login(\?debug=)?/
 // @downloadURL  https://raw.githubusercontent.com/Maurin3/Userscripts/master/odoo-quick-connect.user.js
 // @updateURL    https://raw.githubusercontent.com/Maurin3/Userscripts/master/odoo-quick-connect.user.js
