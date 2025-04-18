@@ -17,13 +17,11 @@ Some useful userscripts :smirk:
 | Remove ads for Tab for a Cause | [install][tfc-raw] | ![alt text](https://img.shields.io/badge/Version-1.0-C4246A.svg "Version 1.0")     |
 | Hide Archived Repos GitHub     | [install][har-raw] | ![alt text](https://img.shields.io/badge/Version-1.1-C4246A.svg "Version 1.1")     |
 | Remove ads for Outlook         | [install][nao-raw] | ![alt text](https://img.shields.io/badge/Version-1.2-C4246A.svg "Version 1.2")     |
-| Dark Mode Odoo (Attribute)     | [install][odo-raw] | ![alt text](https://img.shields.io/badge/Version-1.0.0-C4246A.svg "Version 1.0.0") |
 
 [oqc-raw]: https://github.com/Maurin3/Userscripts/raw/master/odoo-quick-connect.user.js
 [tfc-raw]: https://github.com/Maurin3/Userscripts/raw/master/no-ads-tab-for-a-cause.user.js
 [har-raw]: https://github.com/Maurin3/Userscripts/raw/master/hide-archive-repo-github.user.js
 [nao-raw]: https://github.com/Maurin3/Userscripts/raw/master/no-ads-outlook.user.js
-[odo-raw]: https://github.com/Maurin3/Userscripts/raw/master/odoo-dark-old.user.js
 
 **NB** : For the 'Remove ads for Tab for a Cause' userscript, I use some extensions instead of their extension and set the URL to <https://tab.gladly.io/newtab/> (Make sure you have an account for this website/extension):
 
